@@ -1,5 +1,7 @@
 {
   "name": "hotel",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "fecha": "^2.3.3"
+  }
 }

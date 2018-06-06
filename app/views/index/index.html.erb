@@ -1,0 +1,80 @@
+<div class="back">
+  <div class="div-center">
+    <div class="content">
+      <h1>Booking</h1>
+
+      <%= form_for @reservation do |f| %>
+
+        <%= f.fields_for @client, class: "form-group" do |c| %>
+          <div class="form-group">
+            <label>First name</label>
+            <%= c.text_field :name, class:"form-control" %><br />
+            <label>Last name</label>
+            <%= c.text_field :surname, class:"form-control" %><br />
+            <label>Phone number</label>
+            <%= c.text_field :phone_number, class:"form-control" %><br />
+            <label>Email</label>
+            <%= c.text_field :email, class:"form-control" %><br />
+          </div>
+        <% end %>
+        <% if flash[:error] -%>
+          <p class="error text-danger"><%= flash[:error] %></p>
+        <% end -%>
+        <div class="form-group">
+          <div class="input-daterange input-group datepicker standart" id="datepicker">
+            <%= f.text_field :date_from , class:"form-control input-sm" %><br />
+            <span class="input-group-addon">to</span>
+            <%= f.text_field :date_to , class:"form-control input-sm" %><br />
+          </div>
+          <div class="input-daterange input-group datepicker luxe" id="datepicker">
+            <%= f.text_field :date_from , class:"form-control input-sm" %><br />
+            <span class="input-group-addon">to</span>
+            <%= f.text_field :date_to , class:"form-control input-sm" %><br />
+          </div>
+          <label>Type of room:</label></br>
+          <%= f.radio_button :type_of_room, "standart"  %> <%= f.label :type_of_room, "3 people" %>
+          <%= f.radio_button :type_of_room, "luxe" %> <%= f.label :type_of_room,  "4 people" %> </br>
+        </div>
+        <%= f.hidden_field :standart_dates, class: "standart_date", data: { temp: @reservation.standart_dates } %>
+        <%= f.hidden_field :luxe_dates, class: "luxe_date", data: { temp: @reservation.luxe_dates } %>
+        <div class="form-group">
+          <%= f.submit class: "btn btn-primary"%>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script>
+    $(function() {
+        $('.standart').datepicker({
+            format: 'dd.mm.yyyy',
+            datesDisabled: $('.standart_date').data('temp'),
+            startDate : new Date()
+
+        });
+        $('.luxe').datepicker({
+            format: 'dd.mm.yyyy',
+            datesDisabled: $('.luxe_date').data('temp'),
+            startDate : new Date()
+
+        });
+    });
+    console.log($('.date').data('temp'))
+
+    $(document).ready(function () {
+
+        $('input[type="radio"]').click(function () {
+            if ($(this).attr("value") == "standart") {
+                $(".luxe").hide();
+                $(".standart").show();
+            }
+            if ($(this).attr("value") == "luxe") {
+                $(".luxe").show();
+                $(".standart").hide();
+            }
+        });
+
+        $('input[type="radio"]').trigger('click');  // trigger the event
+    });
+</script>
