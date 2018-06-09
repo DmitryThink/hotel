@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap-datepicker
 //= require bootstrap.min
-//= require hotel-datepicker.min
 //= require fecha.min
 //= require rails-ujs
 //= require turbolinks

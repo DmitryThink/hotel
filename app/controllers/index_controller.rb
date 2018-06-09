@@ -1,11 +1,13 @@
 class IndexController < ApplicationController
   def index
-    @client = Client.new()
+    @client = Client.new(person: Person.new)
     @reservation = Reservation.new(room: Room.new(id:1), client: @client)
   end
 
   def create
     @client = Client.new(client_params)
+    @client.person = Person.new(person_params)
+
     date_from = reservation_params[:date_from]
     date_to = reservation_params[:date_to]
     if Room.free_rooms?(type_of_room, date_from, date_to)
@@ -30,7 +32,11 @@ class IndexController < ApplicationController
   private
 
   def client_params
-    params.require(:reservation).require(:client).permit(:name, :surname, :phone_number, :email)
+    params.require(:reservation).require(:client).permit(:phone_number, :email)
+  end
+
+  def person_params
+    params.require(:reservation).require(:client).permit(:name, :surname)
   end
 
   def reservation_params

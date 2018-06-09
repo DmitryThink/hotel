@@ -1,39 +1,38 @@
-<div class="back">
+
   <div class="div-center">
     <div class="content">
       <h1>Booking</h1>
-
       <%= form_for @reservation do |f| %>
-
         <%= f.fields_for @client, class: "form-group" do |c| %>
           <div class="form-group">
             <label>First name</label>
-            <%= c.text_field :name, class:"form-control" %><br />
+            <%= c.text_field :name, class:"form-control", :required => true %><br />
             <label>Last name</label>
-            <%= c.text_field :surname, class:"form-control" %><br />
+            <%= c.text_field :surname, class:"form-control", :required => true %><br />
             <label>Phone number</label>
-            <%= c.text_field :phone_number, class:"form-control" %><br />
+            <%= c.text_field :phone_number, class:"form-control",:required => true %><br />
             <label>Email</label>
-            <%= c.text_field :email, class:"form-control" %><br />
+            <%= c.text_field :email, class:"form-control", :required => true %><br />
           </div>
         <% end %>
         <% if flash[:error] -%>
           <p class="error text-danger"><%= flash[:error] %></p>
         <% end -%>
         <div class="form-group">
+          <label>Dates</label>
           <div class="input-daterange input-group datepicker standart" id="datepicker">
-            <%= f.text_field :date_from , class:"form-control input-sm" %><br />
+            <%= f.text_field :date_from , class:"form-control input-sm", id: "start_date" %><br />
             <span class="input-group-addon">to</span>
-            <%= f.text_field :date_to , class:"form-control input-sm" %><br />
+            <%= f.text_field :date_to , class:"form-control input-sm", id: "end_date" %><br />
           </div>
           <div class="input-daterange input-group datepicker luxe" id="datepicker">
-            <%= f.text_field :date_from , class:"form-control input-sm" %><br />
+            <%= f.text_field :date_from , class:"form-control input-sm", id: "start_date" %><br />
             <span class="input-group-addon">to</span>
-            <%= f.text_field :date_to , class:"form-control input-sm" %><br />
+            <%= f.text_field :date_to , class:"form-control input-sm", id: "end_date" %><br />
           </div>
           <label>Type of room:</label></br>
-          <%= f.radio_button :type_of_room, "standart"  %> <%= f.label :type_of_room, "3 people" %>
-          <%= f.radio_button :type_of_room, "luxe" %> <%= f.label :type_of_room,  "4 people" %> </br>
+          <%= f.radio_button :type_of_room, "standart" %> <%= f.label :type_of_room, "Standart - 3 people",  onclick: "window.location='/standart'" %> </br>
+          <%= f.radio_button :type_of_room, "luxe" %> <%= f.label :type_of_room,  "Luxe - 4 people",  onclick: "window.location='/standart'"%> </br>
         </div>
         <%= f.hidden_field :standart_dates, class: "standart_date", data: { temp: @reservation.standart_dates } %>
         <%= f.hidden_field :luxe_dates, class: "luxe_date", data: { temp: @reservation.luxe_dates } %>
@@ -43,24 +42,11 @@
       <% end %>
     </div>
   </div>
-</div>
+
 
 <script>
-    $(function() {
-        $('.standart').datepicker({
-            format: 'dd.mm.yyyy',
-            datesDisabled: $('.standart_date').data('temp'),
-            startDate : new Date()
-
-        });
-        $('.luxe').datepicker({
-            format: 'dd.mm.yyyy',
-            datesDisabled: $('.luxe_date').data('temp'),
-            startDate : new Date()
-
-        });
-    });
-    console.log($('.date').data('temp'))
+    var date=new Date();
+    var year=date.getFullYear();
 
     $(document).ready(function () {
 
@@ -75,6 +61,48 @@
             }
         });
 
+        $('.standart').datepicker({
+            format: 'dd.mm.yyyy',
+            datesDisabled: $('.standart_date').data('temp'),
+            startDate : new Date()
+        });
+        $('.luxe').datepicker({
+            format: 'dd.mm.yyyy',
+            datesDisabled: $('.luxe_date').data('temp'),
+            startDate : new Date(),
+            endDate: new Date(year, '9', '30')
+        });
+
         $('input[type="radio"]').trigger('click');  // trigger the event
     });
+    var unavailableDates = $('.luxe_date').data('temp');
+
+    function validateDateRange() {
+
+        var txtStartDate = $("#start_date");
+        var txtEndDate = $("#end_date");
+        var startDate;
+        var endDate;
+        var tempDate;
+
+        if (txtStartDate.val() == "")
+            return false;
+
+        if (txtEndDate.val() == "")
+            return false;
+
+        startDate = new Date(txtStartDate.val());
+        endDate = new Date(txtEndDate.val());
+
+        for (i = 0; i < unavailableDates.length; i++) {
+            var temp = unavailableDates[i].split("-");
+
+            tempDate = new Date(temp[2], temp[1]-1, temp[0]);
+
+            if (startDate < tempDate && endDate > tempDate) {
+                alert("Invalid Date Range");
+                return false;
+            }
+        }
+    }
 </script>

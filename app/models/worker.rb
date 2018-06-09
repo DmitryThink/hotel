@@ -1,7 +1,11 @@
-class Worker < Person
-  self.abstract_class = true
+class Worker < ApplicationRecord
+  include IWorker
+  has_one :person, as: :personable
 
-  def calculate_salary
-    salary * 1.2
-  end
+  belongs_to :workable, polymorphic: true
+
+  delegate :name,
+           :surname,
+           to: :person
+
 end

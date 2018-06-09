@@ -34,6 +34,16 @@ gem 'bootstrap-datepicker-rails'
 
 gem 'jquery-rails'
 
+gem 'activeadmin'
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
+
+gem 'activeadmin-index_as_calendar', github: 'bys-control/activeadmin-index_as_calendar'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

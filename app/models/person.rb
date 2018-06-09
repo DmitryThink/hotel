@@ -1,3 +1,4 @@
 class Person < ApplicationRecord
-  self.abstract_class = true
+  include IPerson
+  belongs_to :personable, polymorphic: true
 end
