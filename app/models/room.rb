@@ -10,14 +10,13 @@ class Room < ApplicationRecord
 
   def self.dates(type_of_room)
     dates = []
-    (1..29).each do |day|
-      if day < 10
-        date = "0#{day}.06.2018"
-        date2 = "0#{day+1}.06.2018"
-      else
-        date = "#{day}.06.2018"
-        date2 = "#{day+1}.06.2018"
-      end
+    year =  Date.today.year
+    sd = Date.parse("#{year}-06-01")
+    ed = Date.parse("#{year}-09-30")
+
+    sd.upto(ed).each do |day|
+      date = day.strftime("%d.%m.%Y")
+      date2 = (day + 1.day).strftime("%d.%m.%Y")
       unless Room.free_rooms?(type_of_room, date, date2)
         dates << date
       end
@@ -50,6 +49,6 @@ class Room < ApplicationRecord
   end
 
   def max_number_of_rooms
-    15
+    14
   end
 end
