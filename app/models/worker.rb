@@ -6,6 +6,6 @@ class Worker < ApplicationRecord
 
   delegate :name,
            :surname,
-           to: :person
+           to: :person, allow_nil: true
 
 end

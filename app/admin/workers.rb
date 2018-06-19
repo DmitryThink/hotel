@@ -1,12 +1,14 @@
 ActiveAdmin.register Worker do
-  permit_params :name, :surname, :personable, :person
+  actions :index, :show
+  permit_params :name, :surname, :workable_type, :workable
 
   index do
     selectable_column
     column :name
     column :surname
-    column :personable
-    column :person
+    column :workable_type
+    column :workable
     actions
   end
+
 end

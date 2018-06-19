@@ -26,8 +26,7 @@ ActiveAdmin.register Client do
         column :room
         column :reservations_paid do |reservation|
           link_to("#{ reservation.paid ? "Unpaid" : "Paid" }",
-                  reservations_paid_admin_reservation_url(reservation.id),
-                  method: :post)
+                  reservations_paid_admin_reservation_url(reservation.id))
         end
       end
     end

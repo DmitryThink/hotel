@@ -65,4 +65,8 @@ class Reservation < ApplicationRecord
     end
     total_price
   end
+
+  def to_s
+    "Reservation#"+id.to_s + " " + date_from.strftime("%d.%m.%Y") + " - " + date_to.strftime("%d.%m.%Y") + " "+ client.name
+  end
 end

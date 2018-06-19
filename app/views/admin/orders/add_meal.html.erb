@@ -1,0 +1,10 @@
+<%= semantic_form_for @order, url: add_meal_admin_order_url(resource.id), method: :post, multipart: true do |f| %>
+  <%= f.inputs do %>
+    <%= f.collection_select :meals, Meal.all, :id, :to_s %>
+  <%- end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+    <%= f.action :cancel, :as => :link %>
+  <% end %>
+<%- end %>

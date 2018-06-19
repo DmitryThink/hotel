@@ -86,8 +86,8 @@ class BookController < ApplicationController
   end
 
   def payment
+    @reservation.paid = true
     @reservation.save!
-    @reservations = @reservation.client.reservations
     render :succeed
   end
 
