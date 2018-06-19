@@ -65,7 +65,6 @@ class BookController < ApplicationController
     else
       @reservation = Reservation.new(room: Room.new, client: @reservation.client, step: "choose_date")
       @reservation.errors.add(:base, "We haven't #{type_of_room} rooms with this dates!")
-      byebug
       render :choose_date
     end
   end
