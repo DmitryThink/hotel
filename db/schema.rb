@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180619104500) do
+ActiveRecord::Schema.define(version: 20180620090312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -125,6 +125,12 @@ ActiveRecord::Schema.define(version: 20180619104500) do
     t.index ["personable_type", "personable_id"], name: "index_people_on_personable_type_and_personable_id"
   end
 
+  create_table "people_trips", id: false, force: :cascade do |t|
+    t.bigint "trip_id", null: false
+    t.bigint "person_id", null: false
+    t.index ["trip_id", "person_id"], name: "index_people_trips_on_trip_id_and_person_id"
+  end
+
   create_table "places", force: :cascade do |t|
     t.string "name", null: false
     t.string "location"
@@ -169,13 +175,9 @@ ActiveRecord::Schema.define(version: 20180619104500) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "driver_id"
+    t.bigint "place_id"
     t.index ["driver_id"], name: "index_trips_on_driver_id"
-  end
-
-  create_table "trips_visitors", id: false, force: :cascade do |t|
-    t.bigint "trip_id", null: false
-    t.bigint "visitor_id", null: false
-    t.index ["trip_id", "visitor_id"], name: "index_trips_visitors_on_trip_id_and_visitor_id"
+    t.index ["place_id"], name: "index_trips_on_place_id"
   end
 
   create_table "visitors", force: :cascade do |t|
