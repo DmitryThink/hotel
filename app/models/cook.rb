@@ -3,6 +3,7 @@ class Cook < ApplicationRecord
 
   delegate :name,
            :surname,
+           :salary,
            to: :worker, allow_nil: true
 
   has_and_belongs_to_many :meals

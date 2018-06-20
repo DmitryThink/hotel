@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180620090312) do
+ActiveRecord::Schema.define(version: 20180620113419) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 20180620090312) do
   end
 
   create_table "cooks", force: :cascade do |t|
-    t.float "salary", null: false
     t.string "education"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -76,14 +75,12 @@ ActiveRecord::Schema.define(version: 20180620090312) do
   end
 
   create_table "drivers", force: :cascade do |t|
-    t.float "salary", null: false
     t.string "license"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "maids", force: :cascade do |t|
-    t.float "salary", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -163,7 +160,6 @@ ActiveRecord::Schema.define(version: 20180620090312) do
     t.integer "number", null: false
     t.integer "number_of_people", null: false
     t.float "price", null: false
-    t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "type_of_room", default: 0, null: false
@@ -190,6 +186,7 @@ ActiveRecord::Schema.define(version: 20180620090312) do
     t.bigint "workable_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "salary"
     t.index ["workable_type", "workable_id"], name: "index_workers_on_workable_type_and_workable_id"
   end
 

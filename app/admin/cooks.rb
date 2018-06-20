@@ -10,11 +10,12 @@ ActiveAdmin.register Cook do
     actions
   end
 
-  index do
+  show do
     attributes_table do
       row :name
       row :surname
       row :salary
+      row :education
     end
 
   end
@@ -24,6 +25,7 @@ ActiveAdmin.register Cook do
       f.input :name
       f.input :surname
       f.input :salary
+      f.input :education
     end
 
     f.submit
@@ -31,13 +33,17 @@ ActiveAdmin.register Cook do
 
   controller do
     def update
-
+      cook_params = params[:cook]
+      cook = Cook.find(params[:id])
+      cook.update!(education: cook_params[:education])
+      cook.worker.update!(workable: cook, salary: cook_params[:salary])
+      cook.worker.person.update!(name: cook_params[:name], surname: cook_params[:name])
       redirect_to admin_cook_url(params[:id])
     end
 
     def create
       cook_params = params[:cook]
-      cook = Cook.create!(salary: cook_params[:salary])
+      cook = Cook.create!(education: cook_params[:education])
       worker = Worker.create!(workable: cook)
       Person.create!(name: cook_params[:name], surname: cook_params[:name], personable: worker)
       redirect_to admin_cook_url(cook.id)

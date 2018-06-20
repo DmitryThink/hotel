@@ -9,7 +9,7 @@ ActiveAdmin.register Maid do
     actions
   end
 
-  index do
+  show do
     attributes_table do
       row :name
       row :surname
@@ -30,14 +30,17 @@ ActiveAdmin.register Maid do
 
   controller do
     def update
-
+      maid_params = params[:maid]
+      maid = Maid.find(params[:id])
+      maid.worker.update!(workable: maid, salary: maid_params[:salary])
+      maid.worker.person.update!(name: maid_params[:name], surname: maid_params[:name])
       redirect_to admin_maid_url(params[:id])
     end
 
     def create
       maid_params = params[:maid]
-      maid = Maid.create!(salary: maid_params[:salary])
-      worker = Worker.create!(workable: maid)
+      maid = Maid.create!
+      worker = Worker.create!(workable: maid, salary: maid_params[:salary])
       Person.create!(name: maid_params[:name], surname: maid_params[:name], personable: worker)
       redirect_to admin_maid_url(maid.id)
     end

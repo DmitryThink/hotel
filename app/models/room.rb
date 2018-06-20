@@ -4,7 +4,7 @@ class Room < ApplicationRecord
 
   has_many :reservations
 
-  enum status: [ :free, :booked, :busy ]
+  attr_reader :status
 
   enum type_of_room: [ :standart, :luxe ]
 
@@ -22,6 +22,14 @@ class Room < ApplicationRecord
       end
     end
     dates
+  end
+
+  def status
+    if free_on_date?(Date.today.strftime("%d.%m.%Y"))
+      "free"
+    else
+      "busy"
+    end
   end
 
   def self.free_rooms?(type_of_room, date_from, date_to)

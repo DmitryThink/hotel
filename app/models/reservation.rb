@@ -8,7 +8,7 @@ class Reservation < ApplicationRecord
 
   enum step: [ :choose_date, :choose_payment, :payment, :pre_payment ]
 
-  attr_reader :date_from_standart, :date_to_standart, :date_to_luxe, :date_from_luxe
+  attr_reader :date_from_standart, :date_to_standart, :date_to_luxe, :date_from_luxe, :price
 
   belongs_to :room
   has_many :orders
@@ -60,13 +60,15 @@ class Reservation < ApplicationRecord
     orders.each do |order|
       total_price += order.price
     end
-    unless id.nil?
-      update!(total_price: total_price)
-    end
     total_price
   end
 
+  def price
+    calculate_total_price
+  end
+
   def to_s
-    "Reservation#"+id.to_s + " " + date_from.strftime("%d.%m.%Y") + " - " + date_to.strftime("%d.%m.%Y") + " "+ client.name
+    "Reservation#"+id.to_s + " " + date_from.strftime("%d.%m.%Y") + " - " +
+        date_to.strftime("%d.%m.%Y") + " " + (client.present? ? client.name : "")
   end
 end

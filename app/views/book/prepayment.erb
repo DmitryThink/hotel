@@ -4,7 +4,7 @@
     <h2>Call on the <strong>+4792759495</strong></h2>
     <% if @reservation.errors.any? %>
       <% @reservation.errors.full_messages.each do |message| %>
-        <li><p class="error text-danger"><%= message %></p></li>
+        <p class="error text-danger"><%= message %></p>
       <% end %>
     <% end %>
     <%= form_for @reservation do |f| %>

@@ -3,6 +3,7 @@ class Driver < ApplicationRecord
 
   delegate :name,
            :surname,
+           :salary,
            to: :worker, allow_nil: true
 
   has_many :trips

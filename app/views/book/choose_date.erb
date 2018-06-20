@@ -4,7 +4,7 @@
     <%= form_for @reservation do |f| %>
       <% if @reservation.errors.any? %>
         <% @reservation.errors.full_messages.each do |message| %>
-          <li><p class="error text-danger"><%= message %></p></li>
+          <p class="error text-danger"><%= message %></p>
         <% end %>
       <% end %>
       <div class="form-group">

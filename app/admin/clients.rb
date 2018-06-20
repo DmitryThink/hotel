@@ -1,5 +1,5 @@
 ActiveAdmin.register Client do
-  permit_params :name, :surname, :phone_number, :email
+  permit_params :name, :surname, :phone_number, :email, :price
 
   index do
     selectable_column
@@ -9,6 +9,7 @@ ActiveAdmin.register Client do
     column :email
     actions
   end
+
 
   show do
     attributes_table do
@@ -24,6 +25,7 @@ ActiveAdmin.register Client do
         column :date_from
         column :date_to
         column :room
+        column :price
         column :reservations_paid do |reservation|
           link_to("#{ reservation.paid ? "Unpaid" : "Paid" }",
                   reservations_paid_admin_reservation_url(reservation.id))

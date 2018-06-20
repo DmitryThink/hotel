@@ -10,7 +10,7 @@ ActiveAdmin.register Driver do
     actions
   end
 
-  index do
+  show do
     attributes_table do
       row :name
       row :surname
@@ -25,6 +25,7 @@ ActiveAdmin.register Driver do
       f.input :name
       f.input :surname
       f.input :salary
+      f.input :license
     end
 
     f.submit
@@ -32,13 +33,17 @@ ActiveAdmin.register Driver do
 
   controller do
     def update
-
+      driver_params = params[:driver]
+      driver = Driver.find(params[:id])
+      driver.update!(license: driver_params[:license])
+      driver.worker.update!(workable: driver, salary: driver_params[:salary])
+      driver.worker.person.update!(name: driver_params[:name], surname: driver_params[:name])
       redirect_to admin_driver_url(params[:id])
     end
 
     def create
       driver_params = params[:driver]
-      driver = Driver.create!(salary: driver_params[:salary])
+      driver = Driver.create!(license: driver_params[:license])
       worker = Worker.create!(workable: driver)
       Person.create!(name: driver_params[:name], surname: driver_params[:name], personable: worker)
       redirect_to admin_driver_url(driver.id)
