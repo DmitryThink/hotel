@@ -22,6 +22,7 @@ class BookController < ApplicationController
           render :choose_date
       end
     else
+      #create client (step 1)
       @client = Client.new(client_params)
       @client.person = Person.new(person_params)
       if Client.find_by(phone_number: client_params[:phone_number])
@@ -41,6 +42,7 @@ class BookController < ApplicationController
     end
   end
 
+  #logika update powina być taka sama jak w create bo mamy step w reserwacji
   def update
     create
   end
@@ -98,7 +100,6 @@ class BookController < ApplicationController
       render :succeed
     else
       @reservation.errors.add(:base, "Admin doen't choose that reservation is paid.")
-      #flash[:error] = "Admin doen't choose that reservation is paid."
       @reservation.step = "pre_payment"
       render :prepayment
     end

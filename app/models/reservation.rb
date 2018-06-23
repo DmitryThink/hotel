@@ -27,6 +27,7 @@ class Reservation < ApplicationRecord
     Room.dates("standart")
   end
 
+
   def number_with_dates_validation
     if Reservation.invalid_dates?(date_from, date_to, room, id)
       errors[:base] << "Reservation with this dates alraady exists!"

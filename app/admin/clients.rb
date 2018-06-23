@@ -3,6 +3,7 @@ ActiveAdmin.register Client do
 
   index do
     selectable_column
+    column :id
     column :name
     column :surname
     column :phone_number
