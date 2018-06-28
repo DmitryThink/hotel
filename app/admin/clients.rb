@@ -33,4 +33,36 @@ ActiveAdmin.register Client do
     end
   end
 
+  form do |f|
+    f.inputs do
+      f.input :name
+      f.input :surname
+      f.input :phone_number
+      f.input :date_from, :as => :date_picker
+      f.input :date_to, as: :date_picker
+      f.input :type_of_room
+    end
+    f.actions
+  end
+
+  controller do
+    def create
+      ActiveRecord::Base.transaction do
+        room = Room.find_by(type_of_room: params[:client][:type_of_room])
+        client = Client.create!(name: params[:client][:name], surname: params[:client][:surname], phone_number: params[:client][:phone_number])
+        reservation = Reservation.new(date_from: params[:client][:date_from], date_to: params[:client][:date_to], room: room, client: client)
+
+        sd = Date.parse(params[:client][:date_from])
+        ed = Date.parse(params[:client][:date_to])
+        sd.upto(ed).each do |date|
+          room_date = RoomDate.find_by(date: date, room: room)
+          room_date.number = room_date.number - 1
+          room_date.reservations <<
+          room_date.save!
+        end
+        reservation.save!
+        redirect_to admin_client_url(client.id)
+      end
+    end
+  end
 end

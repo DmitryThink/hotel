@@ -112,7 +112,7 @@ ActiveAdmin.setup do |config|
   # roots for each namespace.
   #
   # Default:
-  config.root_to = 'reservations#index'
+  config.root_to = 'clients#index'
 
   # == Admin Comments
   #

@@ -1,3 +1,0 @@
-class ConstantOrder < Order
-
-end
