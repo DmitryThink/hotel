@@ -50,19 +50,40 @@ ActiveAdmin.register Client do
       ActiveRecord::Base.transaction do
         room = Room.find_by(type_of_room: params[:client][:type_of_room])
         client = Client.create!(name: params[:client][:name], surname: params[:client][:surname], phone_number: params[:client][:phone_number])
-        reservation = Reservation.new(date_from: params[:client][:date_from], date_to: params[:client][:date_to], room: room, client: client)
 
         sd = Date.parse(params[:client][:date_from])
         ed = Date.parse(params[:client][:date_to])
         sd.upto(ed).each do |date|
           room_date = RoomDate.find_by(date: date, room: room)
           room_date.number = room_date.number - 1
-          room_date.reservations <<
+          room_date.reservations << reservation
           room_date.save!
         end
-        reservation.save!
+        reservation = Reservation.create!(date_from: params[:client][:date_from], date_to: params[:client][:date_to], room: room, client: client)
+
         redirect_to admin_client_url(client.id)
       end
     end
   end
+
+  # def update
+  #   ActiveRecord::Base.transaction do
+  #     room = Room.find_by(type_of_room: params[:client][:type_of_room])
+  #     client = client.find(params[:id])
+  #     client.update!(name: params[:client][:name], surname: params[:client][:surname], phone_number: params[:client][:phone_number])
+  #
+  #     byebug
+  #     sd = Date.parse(params[:client][:date_from])
+  #     ed = Date.parse(params[:client][:date_to])
+  #     sd.upto(ed).each do |date|
+  #       room_date = RoomDate.find_by(date: date, room: room)
+  #       room_date.number = room_date.number - 1
+  #       room_date.reservations << reservation
+  #       room_date.save!
+  #     end
+  #     reservation = Reservation.create!(date_from: params[:client][:date_from], date_to: params[:client][:date_to], room: room, client: client)
+  #
+  #     redirect_to admin_client_url(client.id)
+  #   end
+  # end
 end

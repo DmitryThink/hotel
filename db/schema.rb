@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180627143844) do
+ActiveRecord::Schema.define(version: 20180629142149) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,18 @@ ActiveRecord::Schema.define(version: 20180627143844) do
     t.string "phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email"
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "last4"
+    t.decimal "amount"
+    t.boolean "success"
+    t.string "authorization_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -87,6 +99,30 @@ ActiveRecord::Schema.define(version: 20180627143844) do
     t.integer "type_of_room"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tolk_locales", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["name"], name: "index_tolk_locales_on_name", unique: true
+  end
+
+  create_table "tolk_phrases", force: :cascade do |t|
+    t.text "key"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tolk_translations", force: :cascade do |t|
+    t.integer "phrase_id"
+    t.integer "locale_id"
+    t.text "text"
+    t.text "previous_text"
+    t.boolean "primary_updated", default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["phrase_id", "locale_id"], name: "index_tolk_translations_on_phrase_id_and_locale_id", unique: true
   end
 
   add_foreign_key "room_dates", "rooms"

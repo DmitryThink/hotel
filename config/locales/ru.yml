@@ -1,0 +1,5 @@
+en:
+  models:
+    room:
+      name:
+        singular: 'Комната'

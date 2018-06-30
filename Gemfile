@@ -44,6 +44,11 @@ gem 'pundit'
 
 gem 'wicked'
 
+gem 'activemerchant'
+
+gem 'tolk'
+gem 'kaminari'
+
 gem 'activeadmin-index_as_calendar', github: 'bys-control/activeadmin-index_as_calendar'
 
 # Use Capistrano for deployment
