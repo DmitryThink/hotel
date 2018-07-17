@@ -12,9 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-datepicker
-//= require bootstrap.min
-//= require fecha.min
-//= require rails-ujs
-//= require turbolinks
-//= require_tree .
+//= require plugin/pluginson3step.js
+//= require plugin/parallax.min.js
+//= require plugin/sticky.js
+//= require js/jquery.dateselect.js
+//= require js/map.js
+//= require rs-plugin/js/jquery.themepunch.revolution.min.js
+//= require js/on3step.js
+//= require js/plugin-set.js
+//= require js/nav.js
+

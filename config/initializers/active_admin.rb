@@ -56,6 +56,7 @@ ActiveAdmin.setup do |config|
   # within the application controller.
   config.authentication_method = :authenticate_admin_user!
 
+
   # == User Authorization
   #
   # Active Admin will automatically call an authorization
@@ -119,7 +120,7 @@ ActiveAdmin.setup do |config|
   # This allows your users to comment on any resource registered with Active Admin.
   #
   # You can completely disable comments:
-  # config.comments = false
+  config.comments = false
   #
   # You can change the name under which comments are registered:
   # config.comments_registration_name = 'AdminComment'
@@ -290,17 +291,4 @@ ActiveAdmin.setup do |config|
   # You can inherit it with own class and inject it for all resources
   #
   # config.order_clause = MyOrderClause
-  config.namespace :admin do |admin|
-    admin.build_menu :utility_navigation do |menu|
-      menu.add :label => "Languages" do |lang|
-        lang.add :label => "English",:url => proc { url_for(:locale => 'en') }, id: 'i18n-en', :priority => 1
-        lang.add :label => "Russian",:url => proc { url_for(:locale => 'ru') }, id: 'i18n-es', :priority => 2
-      end
-      menu.add :label => proc { display_name current_active_admin_user },
-               :url => '#',
-               :id => 'current_user',
-               :if => proc { current_active_admin_user? }
-      admin.add_logout_button_to_menu menu
-    end
-  end
 end

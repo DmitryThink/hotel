@@ -15,5 +15,11 @@ module Hotel
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.autoload_paths += Dir[Rails.root.join('app', 'concerns', '{**/}')]
+    #config.autoload_paths << "#{Rails.root}/lib"
+    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.woff *.ttf)
+    #
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.default_locale = :ru
+    config.assets.enabled
   end
 end

@@ -5,4 +5,8 @@ class Room < ApplicationRecord
 
   has_many :reservations
   has_many :room_dates
+
+  def to_s
+    type_of_room
+  end
 end

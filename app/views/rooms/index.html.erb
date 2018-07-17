@@ -1,3 +1,68 @@
-<h1>ROOMS</h1>
-<%= link_to "Standart", standart_path %>
-<%= link_to "Luxe", luxe_path  %>
+<!-- subheader -->
+<section id="subheader">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          КОМНАТЫ
+        </h1>
+      </div>
+
+      <!-- devider -->
+      <div class="col-md-12">
+        <div class="devider-page">
+          <div class="devider-img-right">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <ul class="subdetail">
+          <li>
+            <a href="/">ДОМОЙ</a>
+          </li>
+
+          <li class="sep">/
+          </li>
+
+          <li>
+            <a href="/prices">УТОЧНИТЬ ЦЕНЫ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- subheader end -->
+
+<!-- room -->
+<section class="whitepage" aria-label="rooms">
+<div class="container">
+ <div class="row">
+
+ <div class="col-md-6">
+  <div class="room">
+   <%= image_tag("rooms/img1.jpg", :alt => "room img", :class => "img-responsive", ) %>
+   <div class="heading">Стандарт</div>
+   <div class="devider-rooms"></div>
+   <div class="price">₴<%= @room_standart.room_dates.where(date: Time.now).first.price.to_i %><sub>/ night</sub></div>
+   <p class="content">Стандартный трёхместный номер.</p>
+   <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", standart_path %></div>
+  </div>
+ </div>
+
+ <div class="col-md-6">
+ <div class="room">
+  <%= image_tag("rooms/img2.jpg", :alt => "room img", :class => "img-responsive", ) %>
+  <div class="heading">Люкс</div>
+   <div class="devider-rooms"></div>
+   <div class="price">₴<%= @room_luxe.room_dates.where(date: Time.now).first.price.to_i %><sub>/ night</sub></div>
+   <p class="content">Четырехместный люкс номер.</p>
+   <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", luxe_path %></div>
+ </div>
+ </div>
+
+ </div>
+</div>
+</section>
+<!-- room end -->

@@ -1,5 +1,43 @@
-en:
-  models:
-    room:
-      name:
-        singular: 'Комната'
+ru:
+  activerecord:
+    models:
+      room:
+        one: Комнатa
+        other: Комнаты
+        few: Комнат
+      room_date:
+        one: Дата
+        other: Даты
+        few: Дат
+        many:  Дат
+      reservation:
+        one: Резервация
+        other: Резервации
+        few: Резерваций
+        many: Резерваций
+      client:
+        one: Клиент
+        other: Клиенты
+        few: Клиентов
+        many: Клиентов
+    attributes:
+      room:
+        number: Количество
+        number_of_people: Количество человек
+        type_of_room: Тип
+      room_date:
+        date: Дата
+        number: Количество номеров
+        price: Цена
+        room: Комната
+      reservation:
+        date_from: Дата въезда
+        date_to: Дата выезда
+        total_price: Цена
+        client: Клиент
+        room: Комната
+      client:
+        name: Имя
+        surname: Фамилия
+        phone_number: Номер телефона
+        email: Почта

@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-datepicker-rails'
 
+gem 'bootstrap-sass'
+
 gem 'jquery-rails'
 
 gem 'activeadmin'
@@ -44,10 +46,13 @@ gem 'pundit'
 
 gem 'wicked'
 
+gem 'rails-i18n', '~> 5.1'
+
 gem 'activemerchant'
 
 gem 'tolk'
 gem 'kaminari'
+gem 'font-awesome-sass', '~> 4.4.0'
 
 gem 'activeadmin-index_as_calendar', github: 'bys-control/activeadmin-index_as_calendar'
 

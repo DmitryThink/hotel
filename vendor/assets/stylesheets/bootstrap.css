@@ -3,7 +3,7 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.stylesheets v3.0.3 | MIT License | github.com/necolas/normalize.stylesheets */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6704,7 +6704,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .hidden-lg {
-    display: none !important;
+    /*display: none !important;*/
   }
 }
 .visible-print {
@@ -6754,4 +6754,4 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+

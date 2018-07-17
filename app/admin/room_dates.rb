@@ -1,5 +1,12 @@
 ActiveAdmin.register RoomDate do
+  actions :index, :show
 
+  index do
+    column :date
+    column :number
+    column :price
+    column :room
+  end
 
   show do
     attributes_table do

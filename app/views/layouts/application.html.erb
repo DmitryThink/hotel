@@ -2,28 +2,169 @@
 <html>
   <head>
     <title>Hotel</title>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
+    <title>Гостевой дом "Волна"</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href=<%= image_path('favicon.png') %> rel="icon" sizes="32x32" type="image/png">
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAQ1QZOe8wyh0FCwEYPRjanzq9gejp6C34"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Wolna</a>
+    <!-- preloader -->
+    <div class="bg-preloader-white"></div>
+    <div class="preloader-white">
+      <div class="mainpreloader">
+        <span></span>
       </div>
-      <ul class="nav navbar-nav">
-        <li><a href="/">Booking</a></li>
-        <li><a href="/rooms">Rooms</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">About us</a></li>
-      </ul>
     </div>
-  </nav>
-  <div class="back">
+    <!-- preloader end -->
+
+    <!-- content wraper -->
+    <div class="content-wrapper">
+
+      <header class="init">
+
+        <!-- subnav -->
+        <div class="subnav hidden-lg">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="left">
+                  <div class="social-icons-subnav">
+                    <div><i class="ti-mobile"></i>+38 (050) 830-73-86</div>
+                    <div><i class="ti-mobile"></i>+38 (067) 752-38-85</div>
+                    <div><i class="ti-email"></i><a href= "mailto:Dmitry.Think@gmail.com">Dmitry.Think@gmail.com</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="right">
+                  <div class="social-icons-subnav">
+                    <a href="#"><span class="ti-facebook"></span></a>
+                    <a href="#"><span class="ti-twitter"></span></a>
+                    <a  href="#"><span class="ti-instagram"></span></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- subnav end -->
+
+        <!-- nav -->
+        <div class="navbar-default-white navbar-fixed-top">
+          <div class="container">
+            <div class="row">
+
+              <!-- menu mobile display -->
+              <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span></button>
+
+              <!-- logo -->
+              <a class="navbar-brand white" href="/">
+                <%= image_tag("logo-white.png", :alt => "logo", :class => "white", ) %>
+                <%= image_tag("logo-black.png", :alt => "logo", :class => "black", ) %>
+              </a>
+              <!-- logo end -->
+
+              <!-- mainmenu start -->
+              <div class="white menu-init" id="main-menu">
+                <nav id="menu-center">
+                  <ul>
+                    <li><a href="/">Домой</a></li>
+                    <li><a href="about_us">О нас</a></li>
+                    <li><a href="rooms">Комнаты</a></li>
+                    <li><a href="gallery">Галерея</a></li>
+                    <li><a href="prices">Цены</a></li>
+                    <li><a href="contact">Контакт</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- mainmenu end -->
+
+            </div>
+          </div>
+          <!-- container -->
+        </div>
+        <!-- nav end -->
+      </header>
     <%= yield %>
-  </div>
+    </div>
+
+    <!-- subfooter -->
+    <section aria-label="footer" class="subfooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="logo">
+              <img alt="logo" src="<%= image_path("logo.png") %>">
+            </div>
+
+            <p>
+              Лучший отель "Волна" ...
+            </p>
+          </div>
+
+
+          <div class="col-md-4 col-xs-12 pull-right">
+            <h3>
+              КОНТАКТЫ
+            </h3>
+
+            <address>
+              <span>ул. Азовская, 191, Геническая горка</span> <span>ТЕЛЕФОН: +38 (050) 830-73-86</span> <span>EMAIL: <a href=
+                                                                                                                                 "mailto:companyname@gmail.com">Dmitry.Think@gmail.com</a></span> <span>САЙТ: <a href="#">www.wolna.com.ua</a></span>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- subfooter end -->
+
+    <!-- footer -->
+    <footer class="white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            &copy; Wolna <%= Time.current.year %>.
+          </div>
+
+          <div class="col-md-6">
+            <div class="right">
+              <div class="social-icons">
+                <a href="#"><span class="ti-facebook"></span></a>
+                <a href="#"><span class="ti-twitter"></span></a>
+                <a  href="#"><span class="ti-instagram"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- ScrolltoTop -->
+    <div id="totop">
+      <span class="ti-angle-up"></span>
+    </div>
+
+    </div>
+
+    <!-- content wraper end -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

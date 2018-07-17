@@ -5,8 +5,6 @@ class Reservation < ApplicationRecord
   delegate :name, :surname, :phone_number, :email, to: :client, allow_nil: true
   delegate :type_of_room, to: :room, allow_nil: true
 
-  attr_reader :date_from_standart, :date_to_standart, :date_from_luxe, :date_to_luxe
-
   belongs_to :client
   belongs_to :room
   has_and_belongs_to_many :room_dates

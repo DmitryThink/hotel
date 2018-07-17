@@ -1,1 +1,170 @@
-<h1>Standart</h1>
+<!-- subheader -->
+<section id="subheader">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          СТАНДАРТ
+        </h1>
+      </div>
+
+      <!-- devider -->
+      <div class="col-md-12">
+        <div class="devider-page">
+          <div class="devider-img-right">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <ul class="subdetail">
+          <li>
+            <a href="/">ДОМОЙ</a>
+          </li>
+
+          <li class="sep">/
+          </li>
+
+          <li>СТАНДАРТ
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- subheader end -->
+
+<!-- services -->
+<section class="room-detail whitepage">
+  <div class="onStep" data-animation="fadeInUp" data-time="300">
+    <div class="container">
+      <div class="row">
+
+        <!-- text detail -->
+        <div class="col-md-4">
+          <div class="detaillist">
+            <h2>Стандарт</h2>
+            <div class="devider-rooms-detail"></div>
+            <p>Стандартный трёхместный номер.
+            </p><br>
+            <p>Стандартный трёхместный номер.</p>
+
+            <div class="space-single"></div>
+
+            <h2>Услуги</h2>
+            <div class="devider-rooms-detail"></div>
+            <span><i class="ti-check-box"></i> Двойная кровать</span>
+            <span><i class="ti-check-box"></i> Диван</span>
+            <span><i class="ti-check-box"></i> Душ</span>
+            <span><i class="ti-check-box"></i> Бесплатный Wi-Fi</span>
+            <span><i class="ti-check-box"></i> Телевизор</span>
+            <span><i class="ti-check-box"></i> Кондиционер в номере</span>
+            <div class="price">₴<%= @room.room_dates.where(date: Time.now).first.price.to_i %> <sub>/ night</sub></div>
+          </div>
+        </div>
+        <!-- text detail end -->
+
+        <!-- detail img -->
+        <div class="col-md-8">
+
+          <div id="roomsBig" class="owl-carousel">
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+          </div>
+
+          <div id="roomsSmall" class="owl-carousel">
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+            <div class="item"><%= image_tag("rooms/img2.jpg", :alt => "img" ) %></div>
+          </div>
+          <a class="btn-book-2 popup-form" href="#reservation">ЗАБРОНИРОВАТЬ</a>
+        </div>
+        <!-- detail img end -->
+
+        <div class="space-single"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- services end -->
+
+<!-- Reservation start -->
+<div class="white-popup-block mfp-hide animbounceInDown" data-time="0" id="reservation">
+  <!--<form action="#" id="form1" method="post" name="form1">-->
+  <%= form_for @reservation, method: :post do |f| %>
+    <div class="row">
+      <div class="col-sm-12 form-group">
+        <% grouped_options = [['Выбери комнату',["Стандарт", "Люкс"]]] %>
+        <%= f.select :type_of_room, grouped_options_for_select(grouped_options), {}, { class: "form-control" } %>
+      </div>
+
+      <div class="col-md-12 form-group">
+        <div class="input-group">
+          <%= f.text_field :date_from, name: "date1", class:"form-control fox1", id:"date1", placeholder:"ДАТА ВЪЕЗДА" %>
+          <div class="input-group-btn">
+            <span class="icon"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-12 form-group">
+        <div class="input-group">
+          <%= f.text_field :date_to,  name:"date2", class:"form-control fox2", id:"date2", placeholder:"ДАТА ВЫЕЗДА" %>
+          <div class="input-group-btn">
+            <span class="icon"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <%= f.text_field :surname, name:"personbook", id:"personbook", placeholder:"ФАМИЛИЯ" %>
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <%= f.text_field :name, id:"namebook", placeholder:"ИМЯ" %>
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <%= f.text_field :email, id:"emailbook", placeholder:"EMAIL" %>
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <%= f.text_field :phone_number, id:"phonebook", placeholder:"ТЕЛЕФОН" %>
+      </div>
+
+      <div class="col-sm-12 form-group">
+        <%= f.text_area :message, id:"message", placeholder:"ВАШЕ СООБЩЕНИЕ" , cols:"50"%>
+      </div>
+
+      <% flash.each do |name, msg| %>
+        <div class="success-white"><%= msg %></div>
+      <% end %>
+      <% if @reservation.errors.any? %>
+        <div class="error-white" >
+          <% @reservation.errors.full_messages.each do |message| %>
+            <%= message + "; "%>
+          <% end %>
+        </div>
+      <% end %>
+      <% if @client.errors.any? %>
+        <div class="error-white" >
+          <% @client.errors.full_messages.each do |message| %>
+            <%= message + "; "%>
+          <% end %>
+        </div>
+      <% end %>
+      <%= f.submit "ЗАБРОНИРОВАТЬ", id: "send", class:"btn-content" %>
+
+    </div>
+  <% end %>
+</div>
+<!-- Reservation end -->

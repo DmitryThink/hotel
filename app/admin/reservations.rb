@@ -1,5 +1,5 @@
 ActiveAdmin.register Reservation do
-  permit_params :date_from, :date_to, :total_price, :client, :room
+  permit_params :date_from, :date_to, :total_price, :client, :room, :message
 
   index do
     selectable_column
@@ -8,6 +8,7 @@ ActiveAdmin.register Reservation do
     column :total_price
     column :client
     column :room
+    column :message
     actions
   end
 
@@ -18,6 +19,7 @@ ActiveAdmin.register Reservation do
       row :total_price
       row :client
       row :room
+      row :message
     end
     panel :dates do
       table_for(reservation.room_dates.order(:date))  do
