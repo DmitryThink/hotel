@@ -20,7 +20,8 @@ class BookController < ApplicationController
       if @reservation.valid? && @client.valid?
         @client.save!
         @reservation.save!
-        render :json => { }
+        # ClientMailer.with(reservation: @reservation).welcome_email.deliver_now
+        render :json => { :text => payment }
       else
         @client.valid?
         render :json => { :text => errors }, :status => 500
@@ -39,6 +40,22 @@ class BookController < ApplicationController
   end
 
   private
+
+  def payment
+    liqpay = Liqpay.new
+    liq = liqpay.cnb_form({
+                        action:      "pay",
+                        amount:      @reservation.prepayment,
+                        currency:    "UAH",
+                        description: "Предоплата за номер " + @room.type_of_room_ru,
+                        email:       @reservation.email,
+                        order_id:    @reservation.id,
+                        version:     "3"
+                    })
+    doc =  Nokogiri.HTML(liq)
+    doc.css('input').last.replace("<button style=\"border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 20px !important; color: #fff !important; font-size:16px !important; font-weight: 600 !important; font-family:OpenSans, sans-serif; cursor: pointer !important; border-radius: 2px !important; background: #3ab0ff !important;\"onmouseover=\"this.style.opacity='0.5';\" onmouseout=\"this.style.opacity='1';\"> <img src=\"https://static.liqpay.ua/buttons/logo-small.png\" name=\"btn_text\" style=\"margin-right: 7px !important; vertical-align: middle !important;\"/> <span style=\"vertical-align:middle; !important\">Сделать предоплату #{@reservation.prepayment} UAH</span> </button>")
+    doc.to_html
+  end
 
   def calculate_reservation_room
     date_from = @reservation.date_from

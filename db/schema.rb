@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180706114826) do
+ActiveRecord::Schema.define(version: 20180718095722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20180706114826) do
     t.bigint "client_id"
     t.boolean "paid"
     t.string "message"
+    t.boolean "prepaid"
     t.index ["client_id"], name: "index_reservations_on_client_id"
     t.index ["room_id"], name: "index_reservations_on_room_id"
   end

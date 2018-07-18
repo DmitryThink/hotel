@@ -40,6 +40,7 @@ jQuery( window ).on( "load", function() {
         //form failed succes var
         var successent = jQuery( "#mail_success" );
         var failedsent = jQuery( "#mail_failed" );
+        var payment = jQuery("#payment")
         jQuery( function() {
             contactsent.on( 'click', function( e ) {
                 e.preventDefault();
@@ -158,7 +159,6 @@ jQuery( window ).on( "load", function() {
                         "border-style": "solid"
                     } );
                 } else namebook.css( "border", "none" );
-                var valuesToSubmit = $(this).serialize();
                 return 0 == r && ( sentbook.attr( {
                     disabled: "true",
                     value: "Sending..."
@@ -170,8 +170,8 @@ jQuery( window ).on( "load", function() {
 												client: { name: p, surname: e, phone_number: ph, email: a },
 												type_of_room: sr
 										},
-                    success: function( e ) {
-                        		successent.fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), sentbook.remove()
+                    success: function( data ) {
+                        		successent.fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
                     },
 										error: function( data ) {
 														( failedsent.html( data.responseJSON.text ).fadeIn( 500 ) ), sentbook.removeAttr( "disabled" )

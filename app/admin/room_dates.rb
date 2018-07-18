@@ -14,16 +14,19 @@ ActiveAdmin.register RoomDate do
       row :date
       row :number
     end
-    panel :reservations do
-      table_for(room_date.reservations) do
-        column :id
-        column :date_from
-        column :date_to
-        column :room
-        column :reservations_paid do |reservation|
-          link_to("#{ reservation.paid ? "Unpaid" : "Paid" }",
-                  reservations_paid_admin_reservation_url(reservation.id),
-                  method: :post)
+
+    tabs do
+      {Заезды: room_date.check_in, Отъезды: room_date.check_out, Все: room_date.reservations}.each do |k, v|
+        tab k do
+          table_for(v) do
+            column :id do |reservation|
+              link_to(reservation.id, admin_reservation_url(reservation.id))
+            end
+            column :name
+            column :surname
+            column :phone_number
+            column :room
+          end
         end
       end
     end

@@ -98,17 +98,21 @@
 
 <!-- Reservation start -->
 <div class="white-popup-block mfp-hide animbounceInDown" data-time="0" id="reservation">
-  <!--<form action="#" id="form1" method="post" name="form1">-->
-  <%= form_for @reservation, method: :post do |f| %>
+  <form action="#" id="form1" method="post" name="form1">
     <div class="row">
+
       <div class="col-sm-12 form-group">
-        <% grouped_options = [['Выбери комнату',["Стандарт", "Люкс"]]] %>
-        <%= f.select :type_of_room, grouped_options_for_select(grouped_options), {}, { class: "form-control" } %>
+        <select class="form-control" id="selectroom">
+          <optgroup label="Выберите номер">
+            <option value="Standart">Стандарт</option>
+            <option value="Luxe">Люкс</option>
+          </optgroup>
+        </select>
       </div>
 
       <div class="col-md-12 form-group">
         <div class="input-group">
-          <%= f.text_field :date_from, name: "date1", class:"form-control fox1", id:"date1", placeholder:"ДАТА ВЪЕЗДА" %>
+          <input type="text" name="date1" id="date1" class="form-control fox1" placeholder="ДАТА ВЪЕЗДА">
           <div class="input-group-btn">
             <span class="icon"><i class="fa fa-calendar"></i></span>
           </div>
@@ -118,7 +122,7 @@
 
       <div class="col-md-12 form-group">
         <div class="input-group">
-          <%= f.text_field :date_to,  name:"date2", class:"form-control fox2", id:"date2", placeholder:"ДАТА ВЫЕЗДА" %>
+          <input type="text" name="date2" id="date2" class="form-control fox2" placeholder="ДАТА ВЫЕЗДА">
           <div class="input-group-btn">
             <span class="icon"><i class="fa fa-calendar"></i></span>
           </div>
@@ -126,45 +130,30 @@
       </div>
 
       <div class="col-sm-12 form-group">
-        <%= f.text_field :surname, name:"personbook", id:"personbook", placeholder:"ФАМИЛИЯ" %>
+        <input id="personbook" name="personbook" placeholder="ФАМИЛИЯ" type="text">
       </div>
 
       <div class="col-sm-12 form-group">
-        <%= f.text_field :name, id:"namebook", placeholder:"ИМЯ" %>
+        <input id="namebook" name="namebook" placeholder="ИМЯ" type="text">
       </div>
 
       <div class="col-sm-12 form-group">
-        <%= f.text_field :email, id:"emailbook", placeholder:"EMAIL" %>
+        <input id="emailbook" name="emailbook" placeholder="EMAIL" type="text">
       </div>
 
       <div class="col-sm-12 form-group">
-        <%= f.text_field :phone_number, id:"phonebook", placeholder:"ТЕЛЕФОН" %>
+        <input id="phonebook" name="phonebook" placeholder="ТЕЛЕФОН" type="text">
       </div>
 
       <div class="col-sm-12 form-group">
-        <%= f.text_area :message, id:"message", placeholder:"ВАШЕ СООБЩЕНИЕ" , cols:"50"%>
+        <textarea cols="50" id="messagebook" name="message" placeholder="ВАШЕ СООБЩЕНИЕ(ОСОБЫЕ ПОЖЕЛАНИЯ)" rows="2"></textarea>
       </div>
 
-      <% flash.each do |name, msg| %>
-        <div class="success-white"><%= msg %></div>
-      <% end %>
-      <% if @reservation.errors.any? %>
-        <div class="error-white" >
-          <% @reservation.errors.full_messages.each do |message| %>
-            <%= message + "; "%>
-          <% end %>
-        </div>
-      <% end %>
-      <% if @client.errors.any? %>
-        <div class="error-white" >
-          <% @client.errors.full_messages.each do |message| %>
-            <%= message + "; "%>
-          <% end %>
-        </div>
-      <% end %>
-      <%= f.submit "ЗАБРОНИРОВАТЬ", id: "send", class:"btn-content" %>
+      <div class="success-white" id="mail_success">Спасибо резервация выслана!</div>
+      <div class="error-white" id="mail_failed">Что-то не так...</div>
+      <button class="btn-content" id="send">ЗАБРОНИРОВАТЬ</button>
 
     </div>
-  <% end %>
+  </form>
 </div>
 <!-- Reservation end -->

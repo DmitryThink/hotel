@@ -3,7 +3,7 @@ class Reservation < ApplicationRecord
   validate :busy_dates
 
   delegate :name, :surname, :phone_number, :email, to: :client, allow_nil: true
-  delegate :type_of_room, to: :room, allow_nil: true
+  delegate :type_of_room, :type_of_room_ru, to: :room, allow_nil: true
 
   belongs_to :client
   belongs_to :room
@@ -39,5 +39,9 @@ class Reservation < ApplicationRecord
       end
       super
     end
+  end
+
+  def prepayment
+    total_price/2
   end
 end

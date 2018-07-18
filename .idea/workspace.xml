@@ -2,864 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/Italic.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/agenda.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/alarm-clock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/alert.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/align-center.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/align-justify.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/align-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/align-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/anchor.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/android.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-double-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-double-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-double-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-double-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/angle-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/announcement.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/apple.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/archive.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-circle-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-circle-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-circle-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-circle-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-top-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-top-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrow.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrows-corner.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrows-horizontal.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/arrows-vertical.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/back-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/back-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bar-chart-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bar-chart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/basketball.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bell.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/blackboard.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bolt-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bolt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/book.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bookmark-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/bookmark.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/briefcase.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/brush-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/brush.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/calendar.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/camera.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/car.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/check-box.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/check.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/clip.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/clipboard.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/close.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/cloud-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/cloud-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/cloud.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/comment-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/comment.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/comments-smiley.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/comments.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-backward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-eject.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-forward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-pause.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-play.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-record.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-shuffle.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-skip-backward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-skip-forward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/control-stop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/credit-card.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/crown.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/css3.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/cup.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/cut.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/dashboard.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/desktop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/direction-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/direction.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/download.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/dribbble.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/dropbox-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/dropbox.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/drupal.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/email.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/envelope.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/eraser.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/exchange-vertical.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/export.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/eye.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/face-sad.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/face-smile.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/facebook.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/file.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/files.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/filter.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/flag-alt-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/flag-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/flag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/flickr-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/flickr.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/folder.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/fullscreen.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/gallery.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/game.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/gift.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/github.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/google.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-drag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-open.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-point-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-point-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-point-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-point-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hand-stop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/harddrive.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/harddrives.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/headphone-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/headphone.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/heart-broken.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/heart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/help-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/help.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/home.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/html5.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/hummer.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/id-badge.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/image.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/import.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/infinite.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/info-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/info.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/ink-pen.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/instagram.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/joomla.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/jsfiddle.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/key.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layers-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layers.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-accordion-list.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-accordion-merged.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-accordion-separated.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-column2-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-column2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-column3-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-column3.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-column4-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-column4.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-cta-btn-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-cta-btn-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-cta-center.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-cta-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-cta-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid2-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid2-thumb.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid3-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid3.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid4-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-grid4.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-line-solid.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-list-large-image.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-list-post.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-list-thumb-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-list-thumb.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-center-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-center.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-left-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-overlay-alt-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-overlay-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-overlay.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-right-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-media-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-menu-full.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-menu-separated.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-menu-v.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-menu.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-placeholder.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-sidebar-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-sidebar-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-sidebar-none.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-sidebar-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-slider-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-slider.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-tab-min.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-tab-v.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-tab-window.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-tab.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-width-default-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-width-default.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout-width-full.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/layout.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/light-bulb.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/line-dashed.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/line-dotted.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/line-double.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/link.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/linkedin.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/linux.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/list-ol.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/list.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/location-arrow.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/location-pin.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/lock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/loop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/magnet.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/map-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/map.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/marker-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/marker.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/medall-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/medall.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/menu-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/menu.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/microphone-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/microphone.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/microsoft-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/microsoft.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/minus.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/mobile.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/money.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/more-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/more.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/mouse-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/mouse.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/music-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/music.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/na.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/new-window.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/notepad.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/package.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/paint-bucket.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/paint-roller.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/palette.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/panel.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/paragraph.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pencil-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pencil-alt2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pencil.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pie-chart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pin-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pin.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pin2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pinterest-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pinterest.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/plug.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/plus.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/power-off.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/printer.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/pulse.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/quote-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/quote-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/receipt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/reddit.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/reload.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/rocket.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/rss-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/rss.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/ruler-alt-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/ruler-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/ruler-pencil.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/ruler.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/save-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/save.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/search.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/server.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/settings.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/share-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/share.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/sharethis-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/sharethis.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shield.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shift-left-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shift-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shift-right-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shift-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shine.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shopping-cart-full.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shopping-cart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/shortcode.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/signal.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/skype.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/slice.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/smallcap.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/soundcloud.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/split-h.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/split-v-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/split-v.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/spray.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/stack-overflow.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/stamp.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/star.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/stats-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/stats-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/support.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/tablet.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/tag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/target.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/text.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/themify-favicon-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/themify-favicon.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/themify-logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/thought.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/thumb-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/thumb-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/ticket.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/time.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/timer.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/trash.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/trello.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/truck.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/tumblr-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/tumblr.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/twitter-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/twitter.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/underline.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/unlink.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/unlock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/upload.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/uppercase.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/user.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/vector.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/video-camera.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/video-clapper.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/view-grid.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/view-list-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/view-list.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/vimeo-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/vimeo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/volume.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/wallet.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/wand.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/wheelchair.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/widget-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/widget.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/widgetized.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/window.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/wordpress.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/world.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/write.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/yahoo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/youtube.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/zip.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/zoom-in.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/SVG/zoom-out.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/avatar.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-about-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-about.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-logo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-res.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-subheader.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg-widget.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blog/65x65/thumb1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blog/65x65/thumb2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blog/65x65/thumb3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blog/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/favicon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/img-news.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/img-news1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/img-news2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/logo-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/logo-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/map-marker.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ourclients/1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ourclients/2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ourclients/3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ourclients/4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ourclients/5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ourclients/6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/big/img8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/projects/img8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/recent/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/recent/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/recent/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/beach.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/com-room.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/rel-room.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rooms/resto-room.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/step-bg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/subscribe-bg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/team/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/team/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/team/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/jquery.dateselect.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/jquery.dateselect.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/map.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/nav.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/on3step.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/plugin-set.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugin/parallax.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugin/pluginson3step.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugin/sticky.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/rs-plugin/js/jquery.themepunch.revolution.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/about_us_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/contact_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/gallery_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/prices_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/about_us/about.html.erb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/contact/contact.html.erb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/index.html.erb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/layout.html.erb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/prices/index.html.erb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/Italic.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/agenda.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/alarm-clock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/alert.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/align-center.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/align-justify.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/align-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/align-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/anchor.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/android.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-double-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-double-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-double-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-double-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/angle-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/announcement.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/apple.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/archive.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-circle-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-circle-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-circle-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-circle-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-top-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-top-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrow.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrows-corner.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrows-horizontal.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/arrows-vertical.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/back-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/back-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bar-chart-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bar-chart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/basketball.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bell.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/blackboard.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bolt-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bolt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/book.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bookmark-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/bookmark.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/briefcase.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/brush-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/brush.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/calendar.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/camera.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/car.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/check-box.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/check.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/clip.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/clipboard.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/close.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/cloud-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/cloud-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/cloud.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/comment-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/comment.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/comments-smiley.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/comments.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-backward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-eject.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-forward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-pause.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-play.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-record.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-shuffle.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-skip-backward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-skip-forward.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/control-stop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/credit-card.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/crown.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/css3.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/cup.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/cut.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/dashboard.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/desktop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/direction-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/direction.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/download.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/dribbble.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/dropbox-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/dropbox.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/drupal.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/email.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/envelope.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/eraser.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/exchange-vertical.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/export.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/eye.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/face-sad.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/face-smile.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/facebook.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/file.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/files.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/filter.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/flag-alt-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/flag-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/flag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/flickr-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/flickr.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/folder.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/fullscreen.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/gallery.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/game.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/gift.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/github.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/google.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-drag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-open.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-point-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-point-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-point-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-point-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hand-stop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/harddrive.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/harddrives.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/headphone-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/headphone.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/heart-broken.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/heart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/help-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/help.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/home.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/html5.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/hummer.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/id-badge.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/image.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/import.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/infinite.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/info-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/info.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/ink-pen.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/instagram.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/joomla.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/jsfiddle.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/key.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layers-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layers.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-accordion-list.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-accordion-merged.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-accordion-separated.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-column2-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-column2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-column3-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-column3.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-column4-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-column4.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-cta-btn-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-cta-btn-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-cta-center.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-cta-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-cta-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid2-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid2-thumb.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid3-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid3.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid4-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-grid4.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-line-solid.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-list-large-image.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-list-post.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-list-thumb-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-list-thumb.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-center-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-center.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-left-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-overlay-alt-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-overlay-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-overlay.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-right-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-media-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-menu-full.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-menu-separated.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-menu-v.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-menu.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-placeholder.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-sidebar-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-sidebar-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-sidebar-none.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-sidebar-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-slider-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-slider.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-tab-min.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-tab-v.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-tab-window.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-tab.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-width-default-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-width-default.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout-width-full.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/layout.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/light-bulb.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/line-dashed.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/line-dotted.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/line-double.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/link.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/linkedin.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/linux.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/list-ol.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/list.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/location-arrow.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/location-pin.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/lock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/loop.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/magnet.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/map-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/map.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/marker-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/marker.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/medall-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/medall.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/menu-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/menu.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/microphone-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/microphone.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/microsoft-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/microsoft.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/minus.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/mobile.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/money.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/more-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/more.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/mouse-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/mouse.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/music-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/music.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/na.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/new-window.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/notepad.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/package.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/paint-bucket.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/paint-roller.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/palette.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/panel.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/paragraph.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pencil-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pencil-alt2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pencil.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pie-chart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pin-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pin.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pin2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pinterest-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pinterest.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/plug.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/plus.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/power-off.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/printer.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/pulse.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/quote-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/quote-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/receipt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/reddit.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/reload.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/rocket.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/rss-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/rss.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/ruler-alt-2.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/ruler-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/ruler-pencil.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/ruler.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/save-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/save.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/search.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/server.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/settings.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/share-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/share.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/sharethis-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/sharethis.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shield.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shift-left-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shift-left.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shift-right-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shift-right.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shine.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shopping-cart-full.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shopping-cart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/shortcode.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/signal.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/skype.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/slice.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/smallcap.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/soundcloud.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/split-h.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/split-v-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/split-v.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/spray.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/stack-overflow.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/stamp.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/star.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/stats-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/stats-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/support.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/tablet.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/tag.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/target.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/text.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/themify-favicon-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/themify-favicon.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/themify-logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/thought.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/thumb-down.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/thumb-up.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/ticket.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/time.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/timer.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/trash.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/trello.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/truck.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/tumblr-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/tumblr.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/twitter-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/twitter.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/underline.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/unlink.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/unlock.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/upload.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/uppercase.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/user.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/vector.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/video-camera.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/video-clapper.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/view-grid.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/view-list-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/view-list.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/vimeo-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/vimeo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/volume.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/wallet.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/wand.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/wheelchair.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/widget-alt.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/widget.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/widgetized.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/window.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/wordpress.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/world.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/write.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/yahoo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/youtube.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/zip.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/zoom-in.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/SVG/zoom-out.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/animated-on3step.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/fonts/themify.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/fonts/themify.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/fonts/themify.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/fonts/themify.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/fullscreen.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/ie7/ie7.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/ie7/ie7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/jquery.dateselect.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/owl.carousel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/owl.theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/owl.transitions.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/queries-on3step.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/rev-settings.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/themify-icons.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f86afd77-e2a7-47ec-97d7-612b6181f6e3.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f86afd77-e2a7-47ec-97d7-612b6181f6e3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f86afd77-e2a7-47ec-97d7-612b6181f6e3/storage_v2/_src_/database/hotel_development.MM_60w/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/f86afd77-e2a7-47ec-97d7-612b6181f6e3/storage_v2/_src_/database/hotel_development.MM_60w/schema/public.abK9xQ.meta" />
-      <change beforePath="$PROJECT_DIR$/.idea/hotel.iml" afterPath="$PROJECT_DIR$/.idea/hotel.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/mailers/client_mailer.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/client_mailer/welcome_email.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/client_mailer/welcome_email.text.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/initializers/liqpay.rb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change beforePath="$PROJECT_DIR$/app/admin/clients.rb" afterPath="$PROJECT_DIR$/app/admin/clients.rb" />
       <change beforePath="$PROJECT_DIR$/app/admin/reservations.rb" afterPath="$PROJECT_DIR$/app/admin/reservations.rb" />
       <change beforePath="$PROJECT_DIR$/app/admin/room_dates.rb" afterPath="$PROJECT_DIR$/app/admin/room_dates.rb" />
-      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/book.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/rooms.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/book.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/book.scss" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/rooms.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rooms.scss" />
+      <change beforePath="$PROJECT_DIR$/app/admin/rooms.rb" afterPath="$PROJECT_DIR$/app/admin/rooms.rb" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/js/on3step.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/on3step.js" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.scss" />
       <change beforePath="$PROJECT_DIR$/app/controllers/book_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/book_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/lib/generate_dates.rb" afterPath="$PROJECT_DIR$/app/lib/generate_dates.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/admin_user.rb" afterPath="$PROJECT_DIR$/app/models/admin_user.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/client.rb" afterPath="$PROJECT_DIR$/app/models/client.rb" />
       <change beforePath="$PROJECT_DIR$/app/models/reservation.rb" afterPath="$PROJECT_DIR$/app/models/reservation.rb" />
       <change beforePath="$PROJECT_DIR$/app/models/room.rb" afterPath="$PROJECT_DIR$/app/models/room.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/choose_date.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/choose_payment.html.erb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/models/room_date.rb" afterPath="$PROJECT_DIR$/app/models/room_date.rb" />
       <change beforePath="$PROJECT_DIR$/app/views/book/index.html.erb" afterPath="$PROJECT_DIR$/app/views/book/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/payment.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/prepayment.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/succeed.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/index.html.erb" afterPath="$PROJECT_DIR$/app/views/rooms/index.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.html.erb" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" afterPath="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" />
       <change beforePath="$PROJECT_DIR$/app/views/rooms/standart.html.erb" afterPath="$PROJECT_DIR$/app/views/rooms/standart.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change beforePath="$PROJECT_DIR$/config/locales/ru.yml" afterPath="$PROJECT_DIR$/config/locales/ru.yml" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180626140415_add_devise_to_admin_users.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180626140421_create_active_admin_comments.rb" afterPath="" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/active_admin.js.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap-datepicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap-datepicker.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugin/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/fecha.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/fecha.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/hotel-datepicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/javascripts/hotel-datepicker.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/active_admin.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-datepicker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-datepicker.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.min.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/hotel-datepicker.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -919,79 +86,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/book/index.html.erb">
+      <file leaf-file-name="room.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/room.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3467">
-              <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="on3step.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/on3step.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="181" column="8" lean-forward="true" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
+      <file leaf-file-name="room_dates.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/admin/room_dates.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/client.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="luxe.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/rooms/luxe.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2325">
-              <caret line="155" column="51" lean-forward="false" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reservation.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/reservation.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="150">
+              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -1013,15 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Years</find>
-      <find>YEARS</find>
-      <find>date-select</find>
-      <find>GALLERY</find>
-      <find>select year</find>
-      <find>font</find>
-      <find>price</find>
-      <find>BOOK NOW</find>
-      <find>BOO</find>
       <find>place</find>
       <find>google</find>
       <find>config.root_to =</find>
@@ -1039,10 +139,19 @@
       <find>date</find>
       <find>fail</find>
       <find>action</find>
-      <find>error-white</find>
       <find>mail_success</find>
       <find>success-white</find>
       <find>disabled</find>
+      <find>byebug</find>
+      <find>sft</find>
+      <find>els</find>
+      <find>eleif</find>
+      <find>liqpay</find>
+      <find>price</find>
+      <find>error-white</find>
+      <find>'</find>
+      <find>reservation</find>
+      <find>col-price</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -1060,6 +169,8 @@
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/app/assets/javascripts/rs-plugin</dir>
       <dir>$PROJECT_DIR$/</dir>
+      <dir>$PROJECT_DIR$/config/environments</dir>
+      <dir>$PROJECT_DIR$/..</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -1068,14 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20180703145346_add_devise_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/views/book/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/lib/generate_dates.rb" />
-        <option value="$PROJECT_DIR$/app/views/book/index-slider.html" />
-        <option value="$PROJECT_DIR$/app/views/book/index.html" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/db/migrate/20180626140421_create_active_admin_comments.rb" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f86afd77-e2a7-47ec-97d7-612b6181f6e3/console.sql" />
         <option value="$PROJECT_DIR$/db/migrate/20180706093800_add_devise_to_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180706095255_add_devise_to_admin_users.rb" />
@@ -1084,41 +187,49 @@
         <option value="$PROJECT_DIR$/app/views/succeed/succed.html.erb" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/jquery.dateselect.css" />
         <option value="$PROJECT_DIR$/vendor/assets/javascript/js/plugin-set.js" />
-        <option value="$PROJECT_DIR$/app/models/reservation.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/about_us/about.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/prices_controller.rb" />
         <option value="$PROJECT_DIR$/vendor/assets/javascript/js/jquery.dateselect.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js/jquery.dateselect.js" />
         <option value="$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb" />
         <option value="$PROJECT_DIR$/app/views/rooms/service-1.html.erb" />
-        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss" />
         <option value="$PROJECT_DIR$/app/views/prices/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/Contact/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/contact_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/contact/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js/map.js" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/admin/rooms.rb" />
         <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
-        <option value="$PROJECT_DIR$/app/admin/room_dates.rb" />
-        <option value="$PROJECT_DIR$/config/locales/ru.yml" />
-        <option value="$PROJECT_DIR$/app/admin/reservations.rb" />
         <option value="$PROJECT_DIR$/app/views/rooms/room-detail.html.erb" />
         <option value="$PROJECT_DIR$/app/views/rooms/_layout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/layout.html.erb" />
-        <option value="$PROJECT_DIR$/app/admin/clients.rb" />
         <option value="$PROJECT_DIR$/app/views/rooms/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/rooms_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rooms/standart.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/room.rb" />
         <option value="$PROJECT_DIR$/app/models/client.rb" />
         <option value="$PROJECT_DIR$/app/views/book/index-slider.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rooms/standart.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/client_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/views/client_mailer/welcome_email.text.erb" />
+        <option value="$PROJECT_DIR$/app/views/client_mailer/welcome_email.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/initializers/liqpay.rb" />
+        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js/on3step.js" />
+        <option value="$PROJECT_DIR$/app/views/book/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/reservation.rb" />
         <option value="$PROJECT_DIR$/app/controllers/book_controller.rb" />
+        <option value="$PROJECT_DIR$/app/admin/reservations.rb" />
+        <option value="$PROJECT_DIR$/app/admin/clients.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/active_admin.scss" />
+        <option value="$PROJECT_DIR$/app/admin/room_dates.rb" />
+        <option value="$PROJECT_DIR$/config/locales/ru.yml" />
+        <option value="$PROJECT_DIR$/app/models/room_date.rb" />
+        <option value="$PROJECT_DIR$/app/models/room.rb" />
+        <option value="$PROJECT_DIR$/app/admin/rooms.rb" />
       </list>
     </option>
   </component>
@@ -1172,90 +283,25 @@
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="about_us" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="prices" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="rooms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
@@ -1266,24 +312,7 @@
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1474,12 +503,13 @@
       <workItem from="1530606107966" duration="16864000" />
       <workItem from="1530710160358" duration="39383000" />
       <workItem from="1531482396841" duration="555000" />
-      <workItem from="1531495655535" duration="37622000" />
+      <workItem from="1531495655535" duration="43139000" />
+      <workItem from="1531843590770" duration="11311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266097000" />
+    <option name="totallyTimeSpent" value="282925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1494,18 +524,18 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.389271" sideWeight="0.1187399" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22374798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22008254" sideWeight="0.8812601" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1527,7 +557,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22008254" sideWeight="0.8812601" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.565337" sideWeight="0.8812601" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21567044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.49676898" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22374798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1594,229 +624,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/rev-settings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/queries-on3step.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascript/js/plugin-set.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/jquery.dateselect.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-878">
-          <caret line="80" column="14" lean-forward="false" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/book/succeed.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.4.3/lib/ruby/2.4.0/irb/locale.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/prices_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/about_us/about.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="221" column="25" lean-forward="false" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="956">
-          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/prices/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/gallery_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contact/contact.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="82" lean-forward="false" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/rooms.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="10" lean-forward="false" selection-start-line="121" selection-start-column="10" selection-end-line="121" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/room_dates.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/generate_dates.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/reservations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/contact_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/layout.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/layout.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/layouts/layout.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/room-detail.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/clients.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/room-detail.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1824,39 +651,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascript/js/jquery.dateselect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1900">
-          <caret line="46" column="132" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="46" selection-end-column="132" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascript/js/on3step.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1979">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascript/js/jquery.dateselect.js" />
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascript/js/on3step.js" />
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/jquery.dateselect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="189" column="14" lean-forward="false" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/standart.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="144" column="90" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1868,22 +671,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="1716" column="14" lean-forward="false" selection-start-line="1716" selection-start-column="14" selection-end-line="1716" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/book/index-onepage.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="767" column="81" lean-forward="false" selection-start-line="767" selection-start-column="81" selection-end-line="767" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/book/index-onepage.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1892,19 +680,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/room.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1912,54 +691,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/book/payment.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="46" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/book/payment.erb" />
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/reservation.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/book/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/standart.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="61" />
+        <state relative-caret-position="15">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="158" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/book/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3467">
-          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rooms/luxe.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="155" column="51" lean-forward="false" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="51" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="54" lean-forward="false" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1972,15 +727,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/on3step.js">
+    <entry file="file://$PROJECT_DIR$/app/admin/admin_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="181" column="8" lean-forward="true" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/gallery_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.html.erb" />
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/client_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.text.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/book/index.html">
+    <entry file="file://$PROJECT_DIR$/app/views/client_mailer/welcome_email.text.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/client_mailer/welcome_email.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/on3step.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="168" column="77" lean-forward="false" selection-start-line="168" selection-start-column="77" selection-end-line="168" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/on3step-style.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5575">
+          <caret line="2758" column="27" lean-forward="true" selection-start-line="2758" selection-start-column="20" selection-end-line="2758" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/book/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180718095722_add_prepaid_to_reservation.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1990,8 +858,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state relative-caret-position="457">
+          <caret line="51" column="53" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/liqpay.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/reservation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/clients.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cable.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="45" column="18" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/rooms.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/room_date.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/reservations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/room.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/room_dates.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -36,6 +36,14 @@ ru:
         total_price: Цена
         client: Клиент
         room: Комната
+        prepayment: Предоплата
+        prepayment_status: Статус предоплаты
+        payment_status: Статус оплаты
+        message: Пожелания клиента
+        name: Имя
+        surname: Фамилия
+        phone_number: Номер телефона
+        email: Почта
       client:
         name: Имя
         surname: Фамилия

@@ -20,12 +20,22 @@ ActiveAdmin.register Client do
     end
     panel :reservations do
       table_for(client.reservations) do
-        column :id
+        column :id do |reservation|
+          link_to(reservation.id, admin_reservation_url(reservation.id))
+        end
         column :date_from
         column :date_to
         column :room
-        column :reservations_paid do |reservation|
-          link_to("#{ reservation.paid ? "Unpaid" : "Paid" }",
+        column :message
+        column :prepayment
+        column :prepayment_status do |reservation|
+          link_to("#{ reservation.prepaid ? "Оплачено" : "Не оплачено" }",
+                  reservations_prepaid_admin_reservation_url(reservation.id),
+                  method: :post)
+        end
+        column :total_price
+        column :payment_status do |reservation|
+          link_to("#{ reservation.paid ? "Оплачено" : "Не оплачено" }",
                   reservations_paid_admin_reservation_url(reservation.id),
                   method: :post)
         end

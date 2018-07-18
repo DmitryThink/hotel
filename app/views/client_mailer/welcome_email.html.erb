@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Здравствуйте, <%= @reservation.name %></h1>
+<p>
+  Вы удачно зарезервировали номер на сайте wolna.com.ua!<br>
+  Ваше даные:<br>
+  * Имя: <%= @reservation.name %>.<br>
+  * Фамилия: <%= @reservation.surname %>.<br>
+  * Тип комнаты: <%= @reservation.type_of_room_ru %>.<br>
+  * Даты: C <%= @reservation.date_from.strftime('%d.%m.%Y') %> до <%= @reservation.date_to.strftime('%d.%m.%Y') %>.<br>
+</p>
+<p>Спасибо за резервацию, хорошего дня!</p>
+</body>
+</html>

@@ -9,6 +9,8 @@ ActiveAdmin.register Reservation do
     column :client
     column :room
     column :message
+    column :paid
+    column :prepaid
     actions
   end
 
@@ -45,4 +47,10 @@ ActiveAdmin.register Reservation do
     redirect_to admin_client_url(resource.client.id)
   end
 
+  member_action :reservations_prepaid, method: :post do
+    resource.update_attributes(
+        prepaid: !resource.prepaid
+    )
+    redirect_to admin_client_url(resource.client.id)
+  end
 end

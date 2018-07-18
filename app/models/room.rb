@@ -9,4 +9,12 @@ class Room < ApplicationRecord
   def to_s
     type_of_room
   end
+
+  def type_of_room_ru
+    if type_of_room == "standart"
+      "Стандарт"
+    elsif type_of_room == "luxe"
+      "Люкс"
+    end
+  end
 end
