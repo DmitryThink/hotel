@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   resources :rooms
   get 'standart', to: :standart, controller: 'rooms'
   get 'luxe', to: :standart, controller: 'rooms'
+  get 'payment', to: :payment, controller: 'book'
+  post 'payment', to: :payment, controller: 'book'
 
   resources :about_us
   resources :gallery

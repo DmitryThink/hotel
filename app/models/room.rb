@@ -1,6 +1,4 @@
 class Room < ApplicationRecord
-  validates :number, uniqueness: true
-
   enum type_of_room: [ :standart, :luxe ]
 
   has_many :reservations

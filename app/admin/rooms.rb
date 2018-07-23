@@ -15,11 +15,11 @@ ActiveAdmin.register Room do
       row :type_of_room
     end
     tabs do
-      {Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v|
+      mon = {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}
+      {Сейчас: Time.now.month}.merge(mon).each do |k, v|
       tab k do
         table_for(room.room_dates.where('extract(month from date) = ?', v).order(:date)) do
           column :price
-          column :number
           column :date do |room_date|
             if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"
               strong do
@@ -29,6 +29,7 @@ ActiveAdmin.register Room do
               link_to(room_date.date.strftime("%d-%m-%y %A"), admin_room_date_url(room_date.id))
             end
           end
+          column :number
           column :check_in_list
           column :check_out_list
         end
@@ -37,7 +38,6 @@ ActiveAdmin.register Room do
       tab :Все_даты do
         table_for(room.room_dates.order(:date))  do
           column :price
-          column :number
           column :date do |room_date|
             if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"
               strong do
@@ -47,6 +47,7 @@ ActiveAdmin.register Room do
               link_to(room_date.date.strftime("%d-%m-%y %A"), admin_room_date_url(room_date.id))
             end
           end
+          column :number
           column :check_in_list
           column :check_out_list
         end

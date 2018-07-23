@@ -41,16 +41,25 @@ ActiveAdmin.register Reservation do
   end
 
   member_action :reservations_paid, method: :post do
-    resource.update_attributes(
-        paid: !resource.paid
-    )
+    begin
+    ActiveRecord::Base.transaction do
+      if !resource.prepaid
+        resource.update!(prepaid: !resource.prepaid)
+      end
+      resource.update!(paid: !resource.paid)
+    end
+    rescue
+    end
     redirect_to admin_client_url(resource.client.id)
   end
 
   member_action :reservations_prepaid, method: :post do
-    resource.update_attributes(
-        prepaid: !resource.prepaid
-    )
+    begin
+    ActiveRecord::Base.transaction do
+      resource.update!(prepaid: !resource.prepaid)
+    end
+    rescue
+    end
     redirect_to admin_client_url(resource.client.id)
   end
 end

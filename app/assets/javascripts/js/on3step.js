@@ -171,7 +171,7 @@ jQuery( window ).on( "load", function() {
 												type_of_room: sr
 										},
                     success: function( data ) {
-                        		successent.fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
+                        		successent.html("Цена за номер: " + data.price + " UAH").fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
                     },
 										error: function( data ) {
 														( failedsent.html( data.responseJSON.text ).fadeIn( 500 ) ), sentbook.removeAttr( "disabled" )
