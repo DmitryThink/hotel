@@ -20,6 +20,14 @@ ru:
         other: Клиенты
         few: Клиентов
         many: Клиентов
+      message:
+        one: Сообщение
+        other: Сообщения
+        few: Сообщений
+        many: Сообщения
+      admin_user:
+        one: Администратор
+        other: Администраторы
     attributes:
       room:
         number: Количество
@@ -44,8 +52,15 @@ ru:
         surname: Фамилия
         phone_number: Номер телефона
         email: Почта
+        created_at: Добавлено
       client:
         name: Имя
         surname: Фамилия
         phone_number: Номер телефона
         email: Почта
+        created_at: Добавлено
+      message:
+        name: Имя
+        phone_number: Номер телефона
+        message: Пожелания клиента
+        created_at: Добавлено

@@ -1,12 +1,12 @@
 module Scr
   class GenerateDates
-    def procces!(may = nil, jun = nil, jul = nil, aug = nil, sep = nil)
-      Room.find_of_create_by(id: 1, number: 8, number_of_people: 3, type_of_room: "standart")
-      Room.find_of_create_by(id: 2, number: 6, number_of_people: 4, type_of_room: "luxe")
+    def process!(may = nil, jun = nil, jul = nil, aug = nil, sep = nil)
+      Room.find_or_create_by(id: 1, number: 8, number_of_people: 3, type_of_room: "standart")
+      Room.find_or_create_by(id: 2, number: 6, number_of_people: 4, type_of_room: "luxe")
       RoomDate.destroy_all
 
       year =  Date.today.year
-      sd = Date.parse("#{year}-06-01")
+      sd = Date.parse("#{year}-05-01")
       ed = Date.parse("#{year}-09-30")
 
       sd.upto(ed).each do |date|

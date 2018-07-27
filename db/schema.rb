@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180718095722) do
+ActiveRecord::Schema.define(version: 20180724073405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,60 @@ ActiveRecord::Schema.define(version: 20180718095722) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string "name"
+    t.string "phone_number"
+    t.string "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "months", force: :cascade do |t|
+    t.string "name"
+    t.float "price"
+    t.integer "number"
+    t.integer "1"
+    t.integer "2"
+    t.integer "3"
+    t.integer "4"
+    t.integer "5"
+    t.integer "6"
+    t.integer "7"
+    t.integer "8"
+    t.integer "9"
+    t.integer "10"
+    t.integer "11"
+    t.integer "12"
+    t.integer "13"
+    t.integer "14"
+    t.integer "15"
+    t.integer "16"
+    t.integer "17"
+    t.integer "18"
+    t.integer "19"
+    t.integer "20"
+    t.integer "21"
+    t.integer "22"
+    t.integer "23"
+    t.integer "24"
+    t.integer "25"
+    t.integer "26"
+    t.integer "27"
+    t.integer "28"
+    t.integer "39"
+    t.integer "30"
+    t.integer "31"
+    t.integer "32"
+    t.integer "33"
+    t.integer "34"
+    t.integer "35"
+    t.integer "36"
+    t.integer "37"
+    t.integer "38"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "payments", force: :cascade do |t|

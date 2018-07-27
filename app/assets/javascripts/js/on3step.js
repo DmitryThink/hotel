@@ -34,7 +34,7 @@ jQuery( window ).on( "load", function() {
 		
         // contact form
         var contactname = jQuery( '#name-contact' );
-        var contactemail = jQuery( '#email-contact, input#email-contact' );
+        var contactphone = jQuery( '#email-contact, input#email-contact' );
         var contactmessage = jQuery( '#message-contact' );
         var contactsent = jQuery( '#send-contact' );
         //form failed succes var
@@ -45,15 +45,15 @@ jQuery( window ).on( "load", function() {
             contactsent.on( 'click', function( e ) {
                 e.preventDefault();
                 var e = contactname.val(),
-                    a = contactemail.val(),
+                    a = contactphone.val(),
                     s = contactmessage.val(),
                     r = !1;
-                if ( 0 == a.length || "-1" == a.indexOf( "@" ) || "-1" == a.indexOf( "." ) ) {
+                if ( 0 == a.length ) {
                     var r = !0;
-                    contactemail.css( {
+                    contactphone.css( {
                         "border": "1px solid #ffb600"
                     } );
-                } else contactemail.css( {
+                } else contactphone.css( {
                     "border": "1px solid #959595"
                 } );
                 if ( 0 == e.length ) {
@@ -76,16 +76,18 @@ jQuery( window ).on( "load", function() {
                     disabled: "true",
                     value: "Sending..."
                 } ), jQuery.ajax( {
-                    type: "POST",
-                    url: "send.php",
-                    data: "name=" + e + "&email=" + a + "&subject=You Got Email&message=" + s,
-                    success: function( e ) {
-                        "success" == e ? ( successent.fadeIn( 500 ) ) : ( failedsent.html( e )
-                            .fadeIn( 500 ), contactsent.removeAttr( "disabled" )
-                            .attr( "value", "send" )
-                            .remove() )
-                    }
-                } ) ), !1
+										type: "POST",
+										url: "/contact",
+										data: {
+												message: { name: e, phone_number: a, message: s},
+										},
+										success: function( data ) {
+												successent.fadeIn( 500 ), failedsent.html("")
+										},
+										error: function( data ) {
+												( failedsent.html( data.responseJSON.text ).fadeIn( 500 ) ), contactsent.removeAttr( "disabled" )
+										},
+								} ) ), !1
             } )
         } );
 		
@@ -171,7 +173,7 @@ jQuery( window ).on( "load", function() {
 												type_of_room: sr
 										},
                     success: function( data ) {
-                        		successent.html("Цена за номер: " + data.price + " UAH").fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
+                        		successent.html("Цена за номер: " + data.price + " UAH.<br> У Вас есть 30 минут на предоплату!").fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
                     },
 										error: function( data ) {
 														( failedsent.html( data.responseJSON.text ).fadeIn( 500 ) ), sentbook.removeAttr( "disabled" )

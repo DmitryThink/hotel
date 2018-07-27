@@ -13,10 +13,22 @@ class Reservation < ApplicationRecord
 
   after_save :calculate_paid_prepaid
   after_save :calculate_room_date, if: :saved_change_to_prepaid?
-  after_save :year_of_system
+  after_save :update_year_of_system
+
+  after_destroy do
+    ActiveRecord::Base.transaction do
+      sd = Date.parse(date_from.to_s)
+      ed = Date.parse(date_to.to_s) - 1.day
+      sd.upto(ed).each do |date|
+        room_date = RoomDate.find_by(date: date, room: room)
+        room_date.number += 1
+        room_date.save!
+      end
+    end
+  end
 
   def reservation_new?
-    :created_at == :updated_at
+    created_at == updated_at
   end
 
   def standart_dates
@@ -33,16 +45,6 @@ class Reservation < ApplicationRecord
       dates << room_date.date.strftime("%d.%m.%Y")
     end
     dates
-  end
-
-  def destroy
-    ActiveRecord::Base.transaction do
-      room_dates.each do |date|
-        date.number += 1
-        date.save!
-      end
-      super
-    end
   end
 
   def calculate_room_date
@@ -100,6 +102,8 @@ class Reservation < ApplicationRecord
       room_date = RoomDate.find_by(date: date, room: room)
       if room_date.nil? || room_date.number == 0
         errors.add(:base, "У нас не осталось дат на эти дни! Попробуйте другие")
+      elsif Reservation.where("created_at > ?", 42.minutes.ago).where("date_from=? OR date_to=?", date, date+1.day).count == room_date.number
+        errors.add(:base, "У нас не осталось дат на эти дни! Попробуйте другие")
       end
     end
   end
@@ -134,9 +138,10 @@ class Reservation < ApplicationRecord
     end
   end
 
-  def year_of_system
-    unless Reservation.where(prepaid: true).first.room_dates.first.date.strftime("%Y") == Time.now.year.to_s
-      Scr::GenerateDates.new.procces!
+  def update_year_of_system
+    reservation = Reservation.all.first
+    if reservation.present? && reservation.date_from.strftime("%Y") != Time.now.year.to_s
+      Scr::GenerateDates.new.process!
     end
     true
   end

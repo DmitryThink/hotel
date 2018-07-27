@@ -49,25 +49,13 @@
             </tr>
             </thead>
             <tbody>
-              <td>Май</td>
-              <td><div class="prices">600 грн.</div></td>
-            </tr>
+            <% {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v| %>
             <tr>
-              <td>Июнь</td>
-              <td><div class="prices">800 грн.</div></td>
+              <td><%= k %></td>
+              <% rd =RoomDate.where(room: Room.find_by(type_of_room: "standart")).where('extract(month from date) = ?', v).first %>
+              <td><div class="prices"><%= (rd.price.to_i if rd.present?) || "Нету" %> грн.</div></td>
             </tr>
-            <tr>
-              <td>Июль</td>
-              <td><div class="prices">900 грн.</div></td>
-            </tr>
-            <tr>
-              <td>Август</td>
-              <td><div class="prices">900 грн.</div></td>
-            </tr>
-            <tr>
-              <td>Сентябрь</td>
-              <td><div class="prices">600 грн.</div></td>
-            </tr>
+            <% end %>
             </tbody>
           </table>
           <div class="devider-rooms"></div>
@@ -86,26 +74,13 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>Май</td>
-              <td><div class="prices">800 грн.</div></td>
-            </tr>
-            <tr>
-              <td>Июнь</td>
-              <td><div class="prices">1100 грн.</div></td>
-            </tr>
-            <tr>
-              <td>Июль</td>
-              <td><div class="prices">1200 грн.</div></td>
-            </tr>
-            <tr>
-              <td>Август</td>
-              <td><div class="prices">1200 грн.</div></td>
-            </tr>
-            <tr>
-              <td>Сентябрь</td>
-              <td><div class="prices">800 грн.</div></td>
-            </tr>
+            <% {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v| %>
+              <tr>
+                <td><%= k %></td>
+                <% rd =RoomDate.where(room: Room.find_by(type_of_room: "luxe")).where('extract(month from date) = ?', v).first %>
+                <td><div class="prices"><%= (rd.price.to_i if rd.present?) || "Нету" %> грн.</div></td>
+              </tr>
+            <% end %>
             </tbody>
           </table>
           <div class="devider-rooms"></div>

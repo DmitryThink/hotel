@@ -24,7 +24,7 @@ class BookController < ApplicationController
           render :json => { :text => payment_button, :price => @reservation.total_price }
         else
           @client.valid?
-          render :json => { :text => errors }, :status => 500
+          render :json => { O }, :status => 500
           raise ActiveRecord::Rollback, "Rolling back"
         end
       end
@@ -62,9 +62,10 @@ class BookController < ApplicationController
         action:      "invoice_send",
         amount:      @reservation.prepayment,
         currency:    "UAH",
-        description: "Предоплата за номер " + @room.type_of_room_ru,
+        description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
         email:       @reservation.email,
         order_id:    @reservation.id,
+        expired_date: (Time.now.utc + 40.minute).strftime('%Y-%m-%d %H:%M:%S'),
         version:     "3"
     })
   end
@@ -78,9 +79,10 @@ class BookController < ApplicationController
                         action:      "pay",
                         amount:      @reservation.prepayment,
                         currency:    "UAH",
-                        description: "Предоплата за номер " + @room.type_of_room_ru,
+                        description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
                         email:       @reservation.email,
                         order_id:    @reservation.id,
+                        expired_date: (Time.now.utc + 40.minute).strftime('%Y-%m-%d %H:%M:%S'),
                         version:     "3"
                     })
     doc = Nokogiri.HTML(liq)

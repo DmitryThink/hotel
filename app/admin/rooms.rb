@@ -1,4 +1,5 @@
 ActiveAdmin.register Room do
+  actions :index, :show
   permit_params :number, :number_of_people, :type_of_room, :status, :price
   index do
     selectable_column
@@ -19,6 +20,11 @@ ActiveAdmin.register Room do
       {Сейчас: Time.now.month}.merge(mon).each do |k, v|
       tab k do
         table_for(room.room_dates.where('extract(month from date) = ?', v).order(:date)) do
+          column :today do |room_date|
+            if room_date.date == Date.today
+              'сейчас'
+            end
+          end
           column :price
           column :date do |room_date|
             if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"
@@ -37,6 +43,11 @@ ActiveAdmin.register Room do
       end
       tab :Все_даты do
         table_for(room.room_dates.order(:date))  do
+          column :today do |room_date|
+            if room_date.date == Date.today
+              'сейчас'
+            end
+          end
           column :price
           column :date do |room_date|
             if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"

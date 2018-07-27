@@ -42,7 +42,7 @@
 
  <div class="col-md-6">
   <div class="room">
-   <%= image_tag("rooms/img1.jpg", :alt => "room img", :class => "img-responsive", ) %>
+   <%= image_tag("rooms/standart/img1.jpg", :alt => "room img", :class => "img-responsive", ) %>
    <div class="heading">Стандарт</div>
    <div class="devider-rooms"></div>
    <div class="price">₴<%= @room_standart.room_dates.where(date: Time.now).first.price.to_i %><sub>/ night</sub></div>
@@ -53,7 +53,7 @@
 
  <div class="col-md-6">
  <div class="room">
-  <%= image_tag("rooms/img2.jpg", :alt => "room img", :class => "img-responsive", ) %>
+  <%= image_tag("rooms/luxe/img1.jpg", :alt => "room img", :class => "img-responsive", ) %>
   <div class="heading">Люкс</div>
    <div class="devider-rooms"></div>
    <div class="price">₴<%= @room_luxe.room_dates.where(date: Time.now).first.price.to_i %><sub>/ night</sub></div>
