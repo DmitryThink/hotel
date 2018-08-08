@@ -15,53 +15,54 @@ ActiveAdmin.register Room do
       row :number_of_people
       row :type_of_room
     end
-    tabs do
-      mon = {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}
-      {Сейчас: Time.now.month}.merge(mon).each do |k, v|
-      tab k do
-        table_for(room.room_dates.where('extract(month from date) = ?', v).order(:date)) do
-          column :today do |room_date|
-            if room_date.date == Date.today
-              'сейчас'
-            end
-          end
-          column :price
-          column :date do |room_date|
-            if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"
-              strong do
-                link_to(room_date.date.strftime("%d-%m-%y %A"), admin_room_date_url(room_date.id))
+
+    panel :month do
+      table_for(room.months.order(:number)) do
+        column :name do |month|
+          link_to(month.name_ru, admin_month_url(month.id))
+        end
+        (1..31).each do  |i|
+          column :"day_#{i}" do |month|
+            if month.send("day_#{i}").present?
+              date =  DateTime.parse("#{i}.#{month.number}.2018")
+              room_date = RoomDate.find_by(room: month.room, date: date)
+              day = "#{month.send("day_#{i}")}"
+              if  date.strftime("%A") == "Saturday" ||  date.strftime("%A") == "Sunday"
+                strong do
+                  if room_date.present?
+                    link_to(day, admin_room_date_url(room_date))
+                  else
+                    day
+                  end
+                end
+              else
+                if room_date.present?
+                  link_to(day, admin_room_date_url(room_date))
+                else
+                  day
+                end
               end
-            else
-              link_to(room_date.date.strftime("%d-%m-%y %A"), admin_room_date_url(room_date.id))
             end
           end
-          column :number
-          column :check_in_list
-          column :check_out_list
         end
       end
+    end
+
+    panel :check_in do
+      table_for(room.reservations.where(date_from: Time.now)) do
+        column :client
+        column :room
+        column :message
+        column :prepayment
       end
-      tab :Все_даты do
-        table_for(room.room_dates.order(:date))  do
-          column :today do |room_date|
-            if room_date.date == Date.today
-              'сейчас'
-            end
-          end
-          column :price
-          column :date do |room_date|
-            if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"
-              strong do
-                link_to(room_date.date.strftime("%d-%m-%y %A"), admin_room_date_url(room_date.id))
-              end
-            else
-              link_to(room_date.date.strftime("%d-%m-%y %A"), admin_room_date_url(room_date.id))
-            end
-          end
-          column :number
-          column :check_in_list
-          column :check_out_list
-        end
+    end
+
+    panel :check_out do
+      table_for(room.reservations.where(date_to: Time.now)) do
+        column :client
+        column :room
+        column :message
+        column :prepayment
       end
     end
   end

@@ -3,8 +3,6 @@ ActiveAdmin.register RoomDate do
 
   index do
     column :date
-    column :number
-    column :price
     column :room
   end
 
@@ -12,21 +10,18 @@ ActiveAdmin.register RoomDate do
     attributes_table do
       row :id
       row :date
-      row :number
     end
 
     tabs do
-      {Заезды: room_date.check_in, Отъезды: room_date.check_out, Все: room_date.reservations}.each do |k, v|
-        tab k do
-          table_for(v) do
-            column :id do |reservation|
-              link_to(reservation.id, admin_reservation_url(reservation.id))
-            end
-            column :name
-            column :surname
-            column :phone_number
-            column :room
-          end
+      panel :check_in do
+        table_for(room_date.reservations_room_dates.where(check: "check_in")) do
+          column :reservation
+        end
+      end
+
+      panel :check_out do
+        table_for(room_date.reservations_room_dates.where(check: "check_out")) do
+          column :reservation
         end
       end
     end

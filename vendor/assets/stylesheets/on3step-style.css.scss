@@ -835,7 +835,7 @@ li>a:only-child:after {
 
 li a.btn-book-menu {
   display: block;
-  width: 140px;
+  width: 190px;
   height: 36px;
   font-size: 10pt;
   font-weight: 400;
@@ -861,6 +861,40 @@ li a.btn-book-menu {
 li a.btn-book-menu:hover {
   color: #fff!important;
   background: #ffd928; 
+  border: 1px solid rgba(255, 255, 255, 0);
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+li a.btn-tel-menu {
+  display: block;
+  width: 200px;
+  height: 36px;
+  font-size: 10pt;
+  font-weight: 400;
+  text-align: center!important;
+  letter-spacing:1px;
+  line-height: 27px;
+  color: #fff!important;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: #3ab0ff;
+  outline: none;
+  text-shadow: none;
+  padding:4px 0 4px 20px;
+  margin:0 0 0 15px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+li a.btn-tel-menu:hover {
+  color: #fff!important;
+  background: #3ad9ff;
   border: 1px solid rgba(255, 255, 255, 0);
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;

@@ -45,7 +45,7 @@
    <%= image_tag("rooms/standart/img1.jpg", :alt => "room img", :class => "img-responsive", ) %>
    <div class="heading">Стандарт</div>
    <div class="devider-rooms"></div>
-   <div class="price">₴<%= @room_standart.room_dates.where(date: Time.now).first.price.to_i %><sub>/ night</sub></div>
+   <div class="price">₴<%= Month.find_by(room: @room_standart, number: Time.now.month).price.to_i %><sub>/ night</sub></div>
    <p class="content">Стандартный трёхместный номер.</p>
    <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", standart_path %></div>
   </div>
@@ -56,7 +56,7 @@
   <%= image_tag("rooms/luxe/img1.jpg", :alt => "room img", :class => "img-responsive", ) %>
   <div class="heading">Люкс</div>
    <div class="devider-rooms"></div>
-   <div class="price">₴<%= @room_luxe.room_dates.where(date: Time.now).first.price.to_i %><sub>/ night</sub></div>
+   <div class="price">₴<%= Month.find_by(room: @room_luxe, number: Time.now.month).price.to_i %><sub>/ night</sub></div>
    <p class="content">Четырехместный люкс номер.</p>
    <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", luxe_path %></div>
  </div>

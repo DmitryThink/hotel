@@ -3,6 +3,7 @@ class Room < ApplicationRecord
 
   has_many :reservations
   has_many :room_dates
+  has_many :months
 
   def to_s
     type_of_room

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180724073405) do
+ActiveRecord::Schema.define(version: 20180801160955) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,49 +62,45 @@ ActiveRecord::Schema.define(version: 20180724073405) do
   end
 
   create_table "months", force: :cascade do |t|
-    t.string "name"
-    t.float "price"
     t.integer "number"
-    t.integer "1"
-    t.integer "2"
-    t.integer "3"
-    t.integer "4"
-    t.integer "5"
-    t.integer "6"
-    t.integer "7"
-    t.integer "8"
-    t.integer "9"
-    t.integer "10"
-    t.integer "11"
-    t.integer "12"
-    t.integer "13"
-    t.integer "14"
-    t.integer "15"
-    t.integer "16"
-    t.integer "17"
-    t.integer "18"
-    t.integer "19"
-    t.integer "20"
-    t.integer "21"
-    t.integer "22"
-    t.integer "23"
-    t.integer "24"
-    t.integer "25"
-    t.integer "26"
-    t.integer "27"
-    t.integer "28"
-    t.integer "39"
-    t.integer "30"
-    t.integer "31"
-    t.integer "32"
-    t.integer "33"
-    t.integer "34"
-    t.integer "35"
-    t.integer "36"
-    t.integer "37"
-    t.integer "38"
+    t.float "price"
+    t.string "name"
+    t.integer "max_days"
+    t.integer "day_1"
+    t.integer "day_2"
+    t.integer "day_3"
+    t.integer "day_4"
+    t.integer "day_5"
+    t.integer "day_6"
+    t.integer "day_7"
+    t.integer "day_8"
+    t.integer "day_9"
+    t.integer "day_10"
+    t.integer "day_11"
+    t.integer "day_12"
+    t.integer "day_13"
+    t.integer "day_14"
+    t.integer "day_15"
+    t.integer "day_16"
+    t.integer "day_17"
+    t.integer "day_18"
+    t.integer "day_19"
+    t.integer "day_20"
+    t.integer "day_21"
+    t.integer "day_22"
+    t.integer "day_23"
+    t.integer "day_24"
+    t.integer "day_25"
+    t.integer "day_26"
+    t.integer "day_27"
+    t.integer "day_28"
+    t.integer "day_29"
+    t.integer "day_30"
+    t.integer "day_31"
+    t.bigint "room_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["room_id"], name: "index_months_on_room_id"
   end
 
   create_table "payments", force: :cascade do |t|
@@ -133,16 +129,18 @@ ActiveRecord::Schema.define(version: 20180724073405) do
     t.index ["room_id"], name: "index_reservations_on_room_id"
   end
 
-  create_table "reservations_room_dates", id: false, force: :cascade do |t|
-    t.bigint "reservation_id", null: false
-    t.bigint "room_date_id", null: false
-    t.index ["reservation_id", "room_date_id"], name: "reservations_room_dates_index"
+  create_table "reservations_room_dates", force: :cascade do |t|
+    t.integer "check"
+    t.bigint "reservation_id"
+    t.bigint "room_date_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["reservation_id"], name: "index_reservations_room_dates_on_reservation_id"
+    t.index ["room_date_id"], name: "index_reservations_room_dates_on_room_date_id"
   end
 
   create_table "room_dates", force: :cascade do |t|
     t.date "date"
-    t.integer "number"
-    t.float "price"
     t.bigint "room_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -181,5 +179,8 @@ ActiveRecord::Schema.define(version: 20180724073405) do
     t.index ["phrase_id", "locale_id"], name: "index_tolk_translations_on_phrase_id_and_locale_id", unique: true
   end
 
+  add_foreign_key "months", "rooms"
+  add_foreign_key "reservations_room_dates", "reservations"
+  add_foreign_key "reservations_room_dates", "room_dates"
   add_foreign_key "room_dates", "rooms"
 end

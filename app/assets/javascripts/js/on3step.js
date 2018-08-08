@@ -24,11 +24,11 @@ jQuery( window ).on( "load", function() {
             if ( jQuery( window )
                 .width() < 1025 ) {}
             // mobile icon
-            jQuery( ".navbar-toggle" )
-                .on( "click", function() {
-                    menumobile.toggleClass( 'menu-show' );
-                    navdefault.toggleClass( 'fullHeight' );
-                } );
+								jQuery( ".navbar-toggle" )
+										.on( "click", function() {
+												menumobile.toggleClass( 'menu-show' );
+												navdefault.toggleClass( 'fullHeight' );
+										} );
         } );
         // end function
 		

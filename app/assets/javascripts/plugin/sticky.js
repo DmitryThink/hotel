@@ -37,7 +37,7 @@ var sticky = (function(){
 			headernav.removeClass('show');
 			brandblack.hide();
 			brandwhite.show();
-		    subnav.fadeIn(200);
+		  subnav.fadeIn(200);
 		}
 		if (jQuery(window).width() < 1200) {
         	brandblack.show();

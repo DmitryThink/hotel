@@ -38,6 +38,8 @@ gem 'jquery-rails'
 
 gem 'activeadmin'
 
+gem 'arctic_admin'
+
 # Plus integrations with:
 gem 'devise'
 gem 'cancan' # or cancancan
@@ -57,6 +59,8 @@ gem 'font-awesome-sass', '~> 4.4.0'
 gem 'activeadmin-index_as_calendar', github: 'bys-control/activeadmin-index_as_calendar'
 
 gem 'liqpay', github: 'liqpay/sdk-ruby'
+
+gem 'factory_bot_rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

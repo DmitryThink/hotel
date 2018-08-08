@@ -85,11 +85,18 @@
                 <nav id="menu-center">
                   <ul>
                     <li><a href="/">Домой</a></li>
-                    <li><a href="about_us">О нас</a></li>
+                    <!--<li><a href="about_us">О нас</a></li>-->
                     <li><a href="rooms">Комнаты</a></li>
                     <li><a href="gallery">Галерея</a></li>
                     <li><a href="prices">Цены</a></li>
                     <li><a href="contact">Контакт</a></li>
+                    <li>
+                      <a class="btn-tel-menu popup-form-tel" href="#reservation">Заказать звонок</a>
+
+                    </li>
+                    <li>
+                      <a class="btn-book-menu popup-form" href="#reservation">ЗАБРОНИРОВАТЬ</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -162,6 +169,68 @@
     </div>
 
     </div>
+
+    <!-- Reservation start -->
+    <div class="white-popup-block mfp-hide animbounceInDown" data-time="0" id="reservation">
+      <form action="#" id="form1" method="post" name="form1">
+        <div class="row">
+
+          <div class="col-sm-12 form-group">
+            <select class="form-control" id="selectroom">
+              <optgroup label="Выберите номер">
+                <option value="Standart">Стандарт</option>
+                <option value="Luxe">Люкс</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="col-md-12 form-group">
+            <div class="input-group">
+              <input type="text" name="date1" id="date1" class="form-control fox1" placeholder="ДАТА ВЪЕЗДА">
+              <div class="input-group-btn">
+                <span class="icon"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 form-group">
+            <div class="input-group">
+              <input type="text" name="date2" id="date2" class="form-control fox2" placeholder="ДАТА ВЫЕЗДА">
+              <div class="input-group-btn">
+                <span class="icon"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 form-group">
+            <input id="personbook" name="personbook" placeholder="ФАМИЛИЯ" type="text">
+          </div>
+
+          <div class="col-sm-12 form-group">
+            <input id="namebook" name="namebook" placeholder="ИМЯ" type="text">
+          </div>
+
+          <div class="col-sm-12 form-group">
+            <input id="emailbook" name="emailbook" placeholder="EMAIL" type="text">
+          </div>
+
+          <div class="col-sm-12 form-group">
+            <input id="phonebook" name="phonebook" placeholder="ТЕЛЕФОН" type="text">
+          </div>
+
+          <div class="col-sm-12 form-group">
+            <textarea cols="50" id="messagebook" name="message" placeholder="ВАШЕ СООБЩЕНИЕ(ОСОБЫЕ ПОЖЕЛАНИЯ)" rows="2"></textarea>
+          </div>
+
+          <div class="success-white" id="mail_success">Спасибо резервация выслана!</div>
+          <div class="error-white" id="mail_failed">Что-то не так...</div>
+          <button class="btn-content" id="send">ЗАБРОНИРОВАТЬ</button>
+
+        </div>
+      </form>
+    </div>
+    <!-- Reservation end -->
 
     <!-- content wraper end -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

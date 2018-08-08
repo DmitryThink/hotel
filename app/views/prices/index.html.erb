@@ -52,8 +52,8 @@
             <% {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v| %>
             <tr>
               <td><%= k %></td>
-              <% rd =RoomDate.where(room: Room.find_by(type_of_room: "standart")).where('extract(month from date) = ?', v).first %>
-              <td><div class="prices"><%= (rd.price.to_i if rd.present?) || "Нету" %> грн.</div></td>
+              <% m = Month.find_by(number: v, room_id: 1) %>
+              <td><div class="prices"><%= (m.price.to_i if m.present?) || "Нету" %> грн.</div></td>
             </tr>
             <% end %>
             </tbody>
@@ -77,8 +77,8 @@
             <% {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v| %>
               <tr>
                 <td><%= k %></td>
-                <% rd =RoomDate.where(room: Room.find_by(type_of_room: "luxe")).where('extract(month from date) = ?', v).first %>
-                <td><div class="prices"><%= (rd.price.to_i if rd.present?) || "Нету" %> грн.</div></td>
+                <% m = Month.find_by(number: v, room_id: 2) %>
+                <td><div class="prices"><%= (m.price.to_i if m.present?) || "Нету" %> грн.</div></td>
               </tr>
             <% end %>
             </tbody>

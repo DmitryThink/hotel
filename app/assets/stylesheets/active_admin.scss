@@ -9,12 +9,17 @@
 
 // Active Admin's got SASS!
 @import "active_admin/mixins";
-@import "active_admin/base";
+$primary-color: #ffc128;
+@import "arctic_admin/base";
+
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
-th, td {
-  border: 1px solid #d4d4d4;
+a:link {
+  color: #3bb0ff;
+}
+a:visited {
+  color: #3bb0ff;
 }
