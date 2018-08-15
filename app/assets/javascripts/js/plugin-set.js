@@ -89,6 +89,66 @@ jQuery( document ).ready( function() {
                     }
                 }
             } );
+            jQuery( '.popup-form-tel' )
+                .magnificPopup( {
+                    type: 'inline',
+                    closeOnBgClick: false,
+                    preloader: false,
+                    // It looks not nice, so we disable it:
+                    callbacks: {
+                        beforeOpen: function() {
+                            jQuery( 'body' )
+                                .css( 'overflow', 'hidden' );
+                            jQuery( "#date1, #date2, #personbook, #namebook, #emailbook, #phonebook, #messagebook " )
+                                .val( "" );
+                            jQuery( "form#subscribe .subscribeerror" )
+                                .remove();
+                            if ( jQuery( window )
+                                .width() < 700 ) {
+                                this.st.focus = false;
+                            } else {
+                                this.st.focus = '#subscribeemail';
+                            }
+                        },
+                        beforeClose: function() {
+                            jQuery( 'body' )
+                                .css( 'overflow', 'auto' );
+                            jQuery.dateSelect.hide( {
+                                element: 'input[name="date2"]'
+                            } );
+                            jQuery.dateSelect.hide( {
+                                element: 'input[name="date1"]'
+                            } );
+                        }
+                    }
+                } );
+        // jQuery( '.popup-form-tel' )
+        //     .magnificPopup( {
+        //         type: 'inline',
+        //         closeOnBgClick: false,
+        //         preloader: false,
+        //         // It looks not nice, so we disable it:
+        //         callbacks: {
+        //             beforeOpen: function() {
+        //                 jQuery( 'body' )
+        //                     .css( 'overflow', 'hidden' );
+        //                 jQuery( "#namebook, #phonebook " )
+        //                     .val( "" );
+        //                 jQuery( "form#subscribe .subscribeerror" )
+        //                     .remove();
+        //                 if ( jQuery( window )
+        //                     .width() < 700 ) {
+        //                     this.st.focus = false;
+        //                 } else {
+        //                     this.st.focus = '#subscribeemail';
+        //                 }
+        //             },
+        //             beforeClose: function() {
+        //                 jQuery( 'body' )
+        //                     .css( 'overflow', 'auto' );
+        //             }
+        //         }
+        //     } );
         // step work
         var jQuerycontainerstep = jQuery( '#step-text' );
         jQuerycontainerstep.isotope( {

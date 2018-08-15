@@ -1,7 +1,7 @@
 // HTML document is loaded
 jQuery( window ).on( "load", function() {
         "use strict";
-		
+
         // var preloader
         var loader = jQuery( '.preloader, .preloader-white' );
         var bgpreloader = jQuery( '.bg-preloader, .bg-preloader-white' );
@@ -10,7 +10,7 @@ jQuery( window ).on( "load", function() {
         var navdefault = jQuery( '.navbar-default-white' );
         var Navactive = jQuery( "nav a" );
         var subnav = jQuery( ".subnav" );
-		
+
         // start function fadeOut preloader when condition window has been load
         loader.fadeOut( 'slow', function() {
             "use strict";
@@ -31,7 +31,7 @@ jQuery( window ).on( "load", function() {
 										} );
         } );
         // end function
-		
+
         // contact form
         var contactname = jQuery( '#name-contact' );
         var contactphone = jQuery( '#email-contact, input#email-contact' );
@@ -90,7 +90,7 @@ jQuery( window ).on( "load", function() {
 								} ) ), !1
             } )
         } );
-		
+
         // reservation form
         var sentbook = jQuery( '#send' );
         var selectroom = jQuery( '#selectroom, select#selectroom' );
@@ -100,6 +100,8 @@ jQuery( window ).on( "load", function() {
         var personbook = jQuery( '#personbook' );
         var namebook = jQuery( '#namebook' );
         var emailbook = jQuery( '#emailbook, input#emailbook' );
+        var successent1 = jQuery( "#mail_success1" );
+        var failedsent1 = jQuery( "#mail_failed1" );
         var messagebook = jQuery( '#messagebook' );
         jQuery( function() {
             sentbook.on( 'click', function( e ) {
@@ -173,11 +175,58 @@ jQuery( window ).on( "load", function() {
 												type_of_room: sr
 										},
                     success: function( data ) {
-                        		successent.html("Цена за номер: " + data.price + " UAH.<br> У Вас есть 30 минут на предоплату!").fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
+                        		successent1.html("Цена за номер: " + data.price + " UAH.<br> У Вас есть 30 минут на предоплату!").fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent1.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
                     },
 										error: function( data ) {
-														( failedsent.html( data.responseJSON.text ).fadeIn( 500 ) ), sentbook.removeAttr( "disabled" )
+														( failedsent1.html( data.responseJSON.text ).fadeIn( 500 ) ), sentbook.removeAttr( "disabled" )
 										},
+                } ) ), !1
+            } )
+        } );
+
+        // phone form
+        var sentphone = jQuery( '#sent_phone' );
+        var phonebook1 = jQuery( '#phonebook1' );
+        var namebook1 = jQuery( '#namebook1' );
+        var successent2 = jQuery( "#mail_success2" );
+        var failedsent2 = jQuery( "#mail_failed2" );
+        jQuery( function() {
+            sentphone.on( 'click', function( e ) {
+                e.preventDefault();
+                var e = namebook1.val(),
+                    ph = phonebook1.val(),
+                    r = !1;
+                if ( 0 == ph.length ) {
+                    var r = !0;
+                    phonebook1.css( {
+                        "border-color": "#ffb600",
+                        "border-width": "1px",
+                        "border-style": "solid"
+                    } );
+                } else phonebook1.css( "border", "none" );
+                if ( 0 == e.length ) {
+                    var r = !0;
+                    namebook1.css( {
+                        "border-color": "#ffb600",
+                        "border-width": "1px",
+                        "border-style": "solid"
+                    } );
+                } else namebook1.css( "border", "none" );
+                return 0 == r && ( sentphone.attr( {
+                    disabled: "true",
+                    value: "Sending..."
+                } ), jQuery.ajax( {
+                    type: "POST",
+                    url: "/contact",
+                    data: {
+                        message: { name: e, phone_number: ph},
+                    },
+                    success: function( data ) {
+                        successent2.fadeIn( 500 ), failedsent2.html("")
+                    },
+                    error: function( data ) {
+                        ( failedsent2.html( data.responseJSON.text ).fadeIn( 500 ) ), sentphone.removeAttr( "disabled" )
+                    },
                 } ) ), !1
             } )
         } );

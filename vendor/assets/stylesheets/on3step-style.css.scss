@@ -2420,6 +2420,13 @@ background:rgba(255,255,255,.6);
 box-shadow: 5px 5px 2px rgba(23, 36, 52, .1);
 padding:45px 35px 45px 35px;
 }
+#phone {
+  width:100%;
+  height:auto;
+  background:rgba(255,255,255,.6);
+  box-shadow: 5px 5px 2px rgba(23, 36, 52, .1);
+  padding:45px 35px 45px 35px;
+}
 
 #map {
   width: 100%;
@@ -2584,7 +2591,7 @@ textarea:focus:-ms-input-placeholder {
 	color:#fff;
   width: 100%;
   display:none;
-  padding: 5px 0px 2px 0px;
+  padding: 15px 0px 2px 0px;
   font-size: 15px;
   margin: 10px auto;
 }

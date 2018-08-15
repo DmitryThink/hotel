@@ -171,6 +171,7 @@
 	margin-top:0px;
   }
   #reservation { padding:5%; }
+  #phone { padding:5%; }
   #spacer {
     display: none;
   }
@@ -231,6 +232,7 @@ li a.btn-tel-menu { margin-left:0px; padding:2px 0 4px 20px; }
   }
   .bgpage{ background:none; padding-top:0px !important; }
   #reservation { margin-top:60px; }
+  #phone { margin-top:60px; }
 }
 @media only screen and (max-width: 768px) {
   .team-wrapper {
@@ -337,6 +339,7 @@ font-size: 62pt;
 /****** revolution slider queries end *****/
 
 #reservation { padding:10%; margin-top:60px; }
+#phone { padding:10%; margin-top:60px; }
 
 .recent-post .overlay .content{
 margin: 65% 20px 0 20px;

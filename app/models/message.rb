@@ -1,6 +1,6 @@
 class Message < ApplicationRecord
   validates :phone_number, length: { minimum: 10, maximum: 20 }
-  validates :name, :phone_number, :message, presence: true
+  validates :name, :phone_number, presence: true
   validate :phone_number_format
 
   def phone_number_format

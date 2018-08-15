@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180801160955) do
+ActiveRecord::Schema.define(version: 20180813151803) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -122,9 +122,9 @@ ActiveRecord::Schema.define(version: 20180801160955) do
     t.datetime "updated_at", null: false
     t.bigint "room_id"
     t.bigint "client_id"
-    t.boolean "paid"
+    t.boolean "paid", default: false
     t.string "message"
-    t.boolean "prepaid"
+    t.boolean "prepaid", default: false
     t.index ["client_id"], name: "index_reservations_on_client_id"
     t.index ["room_id"], name: "index_reservations_on_room_id"
   end
@@ -177,6 +177,21 @@ ActiveRecord::Schema.define(version: 20180801160955) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["phrase_id", "locale_id"], name: "index_tolk_translations_on_phrase_id_and_locale_id", unique: true
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "months", "rooms"

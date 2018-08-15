@@ -15,9 +15,11 @@ class Reservation < ApplicationRecord
   after_save :calculate_month, if: :saved_change_to_prepaid?
   after_save :update_year_of_system
 
-  after_destroy do
+  before_destroy do
     ActiveRecord::Base.transaction do
-      calculate_month_(1)
+      if prepaid
+        calculate_month_(1)
+      end
     end
   end
 
@@ -46,8 +48,14 @@ class Reservation < ApplicationRecord
       ReservationsRoomDate.create!(check: "check_in", room_date: check_in, reservation: self)
       ReservationsRoomDate.create!(check: "check_out", room_date: check_out, reservation: self)
     else
-      RoomDate.find_or_create_by(date: date_from, room: room).destroy
-      RoomDate.find_or_create_by(date: date_to, room: room).destroy
+      check_in = RoomDate.find_by(date: date_from, room: room)
+      check_out = RoomDate.find_by(date: date_to, room: room)
+      rrd1 = ReservationsRoomDate.find_by(check: "check_in", room_date: check_in, reservation: self)
+      rrd2 = ReservationsRoomDate.find_by(check: "check_out", room_date: check_out, reservation: self)
+      rrd1.destroy! if rrd1.present?
+      rrd2.destroy! if rrd2.present?
+      check_in.destroy if check_in.reservations_room_dates.count == 0 if check_in.present?
+      check_out.destroy if check_out.reservations_room_dates.count == 0 if check_out.present?
     end
     (month_from..month_to).each do |month_number|
       month = Month.find_by(number: month_number, room: room)
@@ -59,7 +67,7 @@ class Reservation < ApplicationRecord
         to = month.max_days+1
       end
       month.days?(day_from, to-1).each do |day_number|
-        raise "month exp" if day_number == 0
+        raise "month exp" if day_number == 0 && change_number < 0
         day_number = day_number + change_number
         days.merge!("day_#{count}": day_number)
         count+=1
@@ -96,7 +104,7 @@ class Reservation < ApplicationRecord
         to = month.max_days+1
       end
       month.days?(day_from, to-1).each do |number|
-        if Reservation.where("created_at > ?", 42.minutes.ago).where("date_from=? OR date_to=?", date_from_count, date_from_count+1.day).count == number
+        if Reservation.where("created_at > ?", 42.minutes.ago).where(prepaid:false).where("date_from=? OR date_to=?", date_from_count, date_from_count+1.day).count == number
           errors.add(:base, "У нас не осталось дат на эти дни! Попробуйте другие")
         end
         date_from_count = date_from_count+ 1.day

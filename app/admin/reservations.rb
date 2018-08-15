@@ -44,8 +44,6 @@ ActiveAdmin.register Reservation do
     end
     panel :dates do
       table_for(reservation.room_dates.order(:date))  do
-        column :price
-        column :number
         column :date do |room_date|
           if room_date.date.strftime("%A") == "Saturday" || room_date.date.strftime("%A") == "Sunday"
             strong do

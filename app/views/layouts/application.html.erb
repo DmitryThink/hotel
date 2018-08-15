@@ -14,7 +14,7 @@
     <link href=<%= image_path('favicon.png') %> rel="icon" sizes="32x32" type="image/png">
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAQ1QZOe8wyh0FCwEYPRjanzq9gejp6C34"></script>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -91,7 +91,7 @@
                     <li><a href="prices">Цены</a></li>
                     <li><a href="contact">Контакт</a></li>
                     <li>
-                      <a class="btn-tel-menu popup-form-tel" href="#reservation">Заказать звонок</a>
+                      <a class="btn-tel-menu popup-form-tel" href="#phone">Заказать звонок</a>
 
                     </li>
                     <li>
@@ -223,14 +223,37 @@
             <textarea cols="50" id="messagebook" name="message" placeholder="ВАШЕ СООБЩЕНИЕ(ОСОБЫЕ ПОЖЕЛАНИЯ)" rows="2"></textarea>
           </div>
 
-          <div class="success-white" id="mail_success">Спасибо резервация выслана!</div>
-          <div class="error-white" id="mail_failed">Что-то не так...</div>
+          <div class="success-white" id="mail_success1">Спасибо резервация выслана!</div>
+          <div class="error-white" id="mail_failed1">Что-то не так...</div>
           <button class="btn-content" id="send">ЗАБРОНИРОВАТЬ</button>
 
         </div>
       </form>
+      <div class="payment" id="payment"></div>
     </div>
     <!-- Reservation end -->
+
+
+    <!-- Phone start -->
+    <div class="white-popup-block mfp-hide animbounceInDown" data-time="0" id="phone">
+      <form action="#" id="form1" method="post" name="form1">
+        <div class="row">
+
+          <div class="col-sm-12 form-group">
+            <input id="namebook1" name="namebook1" placeholder="ИМЯ" type="text">
+          </div>
+          <div class="col-sm-12 form-group">
+            <input id="phonebook1" name="phonebook1" placeholder="ТЕЛЕФОН" type="text">
+          </div>
+
+          <div class="success-white" id="mail_success2">Спасибо, Вам скоро позвонят!</div>
+          <div class="error-white" id="mail_failed2">Что-то не так...</div>
+          <button class="btn-content" id="sent_phone">Заказать звонок</button>
+
+        </div>
+      </form>
+    </div>
+    <!-- Phone end -->
 
     <!-- content wraper end -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

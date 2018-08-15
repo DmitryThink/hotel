@@ -26,6 +26,12 @@ class Month < ApplicationRecord
     update!(days)
   end
 
+  def self.update_all
+    Month.all.each do |month|
+      month.update_all
+    end
+  end
+
   def name_ru
     case name
       when "May"

@@ -60,7 +60,7 @@ ActiveAdmin.register Client do
   controller do
     def create
       ActiveRecord::Base.transaction do
-        @client = Client.find_by(client_params) || Client.new(client_params)
+        @client = Client.find_by(client_params) || Client.create!(client_params)
         @reservation = Reservation.new(reservation_params)
         @room = Room.find_by(type_of_room: type_of_room.downcase)
         @reservation.client = @client
@@ -74,16 +74,20 @@ ActiveAdmin.register Client do
     private
 
     def calculate_total_price
-      date_from = @reservation.date_from
-      date_to = @reservation.date_to
       price = 0
-      if date_from.present? && date_to.present?
-        sd = Date.parse(date_from.to_s)
-        ed = Date.parse(date_to.to_s) - 1.day
-        sd.upto(ed).each do |date|
-          room_date = RoomDate.find_by(date: date, room: @reservation.room)
-          price += room_date.price
+      month_from = @reservation.date_from.strftime("%m").to_i
+      month_to = @reservation.date_to.strftime("%m").to_i
+      day_from = @reservation.date_from.strftime("%d").to_i
+      day_to = @reservation.date_to.strftime("%d").to_i
+      (month_from..month_to).each do |month_number|
+        month = Month.find_by(number: month_number, room: @reservation.room)
+        if month_number == month_to
+          to = day_to
+        else
+          to = month.max_days+1
         end
+        price += (to-day_from)*month.price
+        day_from = 1
       end
       @reservation.total_price = price
     end
