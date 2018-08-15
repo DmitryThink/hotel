@@ -104,13 +104,32 @@ class Reservation < ApplicationRecord
         to = month.max_days+1
       end
       month.days?(day_from, to-1).each do |number|
-        if Reservation.where("created_at > ?", 42.minutes.ago).where(prepaid:false).where("date_from=? OR date_to=?", date_from_count, date_from_count+1.day).count == number
+        if Reservation.where("created_at > ?", 42.minutes.ago).where(prepaid:false).where("? between date_from and (date_to - INTERVAL '1 DAY')", date_from_count).count >= number
           errors.add(:base, "У нас не осталось дат на эти дни! Попробуйте другие")
         end
-        date_from_count = date_from_count+ 1.day
+        date_from_count = date_from_count + 1.day
       end
       day_from = 1
     end
+  end
+
+  def calculate_total_price
+    price = 0
+    month_from = date_from.strftime("%m").to_i
+    month_to = date_to.strftime("%m").to_i
+    day_from = date_from.strftime("%d").to_i
+    day_to = date_to.strftime("%d").to_i
+    (month_from..month_to).each do |month_number|
+      month = Month.find_by(number: month_number, room: room)
+      if month_number == month_to
+        to = day_to
+      else
+        to = month.max_days+1
+      end
+      price += (to-day_from)*month.price
+      day_from = 1
+    end
+    self.total_price = price
   end
 
   def dates_validation

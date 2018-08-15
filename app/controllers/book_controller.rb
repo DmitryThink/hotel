@@ -17,7 +17,7 @@ class BookController < ApplicationController
         @reservation.client = @client
         @reservation.room = @room
 
-        calculate_total_price
+        @reservation.calculate_total_price
 
         if @reservation.valid? && @client.valid?
           @client.save!
@@ -89,25 +89,6 @@ class BookController < ApplicationController
     doc = Nokogiri.HTML(liq)
     doc.css('input').last.replace("<button style=\"border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 20px !important; color: #fff !important; font-size:16px !important; font-weight: 600 !important; font-family:OpenSans, sans-serif; cursor: pointer !important; border-radius: 2px !important; background: #3ab0ff !important;\"onmouseover=\"this.style.opacity='0.5';\" onmouseout=\"this.style.opacity='1';\"> <img scr=\"https://static.liqpay.ua/buttons/logo-small.png\" name=\"btn_text\" style=\"margin-right: 7px !important; vertical-align: middle !important;\"/> <span style=\"vertical-align:middle; !important\">Сделать предоплату #{@reservation.prepayment} UAH</span> </button>")
     doc.to_html
-  end
-
-  def calculate_total_price
-    price = 0
-    month_from = @reservation.date_from.strftime("%m").to_i
-    month_to = @reservation.date_to.strftime("%m").to_i
-    day_from = @reservation.date_from.strftime("%d").to_i
-    day_to = @reservation.date_to.strftime("%d").to_i
-    (month_from..month_to).each do |month_number|
-      month = Month.find_by(number: month_number, room: @reservation.room)
-      if month_number == month_to
-        to = day_to
-      else
-        to = month.max_days+1
-      end
-      price += (to-day_from)*month.price
-      day_from = 1
-    end
-    @reservation.total_price = price
   end
 
   def errors
