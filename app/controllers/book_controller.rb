@@ -9,10 +9,11 @@ class BookController < ApplicationController
   end
 
   def create
-    begin
+    # begin
       ActiveRecord::Base.transaction do
         @client = Client.find_by(client_params) || Client.new(client_params)
         @reservation = Reservation.new(reservation_params)
+        @reservation.update_year_of_system
         @room = Room.find_by(type_of_room: type_of_room.downcase)
         @reservation.client = @client
         @reservation.room = @room
@@ -29,9 +30,9 @@ class BookController < ApplicationController
           raise ActiveRecord::Rollback, "Rolling back"
         end
       end
-    rescue => ex
-      render :json => { :text => "Что-то пошло не так..." + ex.to_s }, :status => 500
-    end
+    # rescue => ex
+    #   render :json => { :text => "Что-то пошло не так..." + ex.to_s }, :status => 500
+    # end
   end
 
   def update
@@ -87,7 +88,7 @@ class BookController < ApplicationController
                         version:     "3"
                     })
     doc = Nokogiri.HTML(liq)
-    doc.css('input').last.replace("<button style=\"border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 20px !important; color: #fff !important; font-size:16px !important; font-weight: 600 !important; font-family:OpenSans, sans-serif; cursor: pointer !important; border-radius: 2px !important; background: #3ab0ff !important;\"onmouseover=\"this.style.opacity='0.5';\" onmouseout=\"this.style.opacity='1';\"> <img scr=\"https://static.liqpay.ua/buttons/logo-small.png\" name=\"btn_text\" style=\"margin-right: 7px !important; vertical-align: middle !important;\"/> <span style=\"vertical-align:middle; !important\">Сделать предоплату #{@reservation.prepayment} UAH</span> </button>")
+    doc.css('input').last.replace("<button style=\"border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 40px 7px 20px !important; color: #fff !important; font-size:20px !important; font-weight: 600 !important; font-family:OpenSans, sans-serif; cursor: pointer !important; border-radius: 2px !important; background: #3ab0ff !important;\"onmouseover=\"this.style.opacity='0.5';\" onmouseout=\"this.style.opacity='1';\"> <img scr=\"https://static.liqpay.ua/buttons/logo-small.png\" name=\"btn_text\" style=\"margin-right: 7px !important; vertical-align: middle !important;\"/> <span style=\"vertical-align:middle; !important\">Сделать предоплату #{@reservation.prepayment} UAH</span> </button>")
     doc.to_html
   end
 

@@ -3,7 +3,10 @@ module Scr
     def process!
       standart = Room.find_or_create_by(id: 1, number: 8, number_of_people: 3, type_of_room: "standart")
       luxe = Room.find_or_create_by(id: 2, number: 6, number_of_people: 4, type_of_room: "luxe")
+      ReservationsRoomDate.destroy_all
+      RoomDate.destroy_all
       Month.destroy_all
+      Client.destroy_all
       calculate_month(standart, 600, 800, 900, 900, 600)
       calculate_month(luxe, 700, 1000, 1100, 1100, 700)
     end

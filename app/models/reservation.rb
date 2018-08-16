@@ -126,7 +126,7 @@ class Reservation < ApplicationRecord
       else
         to = month.max_days+1
       end
-      price += (to-day_from)*month.price
+      price += (to-day_from) * month.price
       day_from = 1
     end
     self.total_price = price
@@ -158,8 +158,8 @@ class Reservation < ApplicationRecord
 
   def update_year_of_system
     reservation = Reservation.all.first
-    if reservation.present? && reservation.date_from.strftime("%Y") != Time.now.year.to_s
-      Scr::GenerateDates.new.process!
+    if (reservation.present? && reservation.date_from.strftime("%Y") != Time.now.year.to_s) || reservation.blank?
+      Scr::GenerateMonth.new.process!
     end
     true
   end
