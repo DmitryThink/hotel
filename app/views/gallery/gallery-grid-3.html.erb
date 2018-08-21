@@ -49,9 +49,6 @@
             <li class="filt-projects" data-project=".rooms">КОМНАТЫ
             </li>
 
-            <li class="filt-projects" data-project=".resto">КАФЕ
-            </li>
-
             <li class="filt-projects" data-project=".lands">ЛАНШАФТ
             </li>
 
@@ -64,77 +61,156 @@
       
       <!-- start gallery -->
       <div class="no-gutter onStep" data-animation="fadeInUp" data-time="600" id="projects-wrap">
-        <% images = Dir.glob("app/assets/images/rooms/standart/*.jpg") %>
-        <% images.each do |image| %>
-          <div class="col-md-4 col-xs-12 item rooms">
-            <div class="projects-grid big-img">
-              <a href="<%= image_path("rooms/standart/#{image.split('/').last}") %> ">
-                <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart/#{image.split('/').last}") %> ">
-                  <div class="overlay">
-                    <div class="icon"><i class="fa fa-search-plus"></i></div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-        <% end %>
-
-        <% images = Dir.glob("app/assets/images/rooms/luxe/*.jpg") %>
-        <% images.each do |image| %>
-          <div class="col-md-4 col-xs-12 item rooms">
-            <div class="projects-grid big-img">
-              <a href="<%= image_path("rooms/luxe/#{image.split('/').last}") %> ">
-                <div class="hovereffect">
-                  <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe/#{image.split('/').last}") %> ">
-                  <div class="overlay">
-                    <div class="icon"><i class="fa fa-search-plus"></i></div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-        <% end %>
-
         <div class="col-md-4 col-xs-12 item rooms">
           <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img1.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img1.jpg") %> ">
-              <div class="overlay">
+            <a href="<%= image_path("rooms/standart1") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart1") %> ">
+                <div class="overlay">
                   <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
+                </div>
+              </div></a>
           </div>
         </div>
 
         <div class="col-md-4 col-xs-12 item rooms">
           <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img2.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img2.jpg") %> ">
-              <div class="overlay">
-                <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
+            <a href="<%= image_path("rooms/standart2") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart2") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
           </div>
         </div>
 
         <div class="col-md-4 col-xs-12 item rooms">
           <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img3.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img3.jpg") %> ">
-              <div class="overlay">
-                <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
+            <a href="<%= image_path("rooms/standart3") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart3") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
           </div>
         </div>
 
-        <div class="col-md-4 col-xs-12 item rooms resto">
+        <div class="col-md-4 col-xs-12 item rooms">
           <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img4.jpg") %> ">
+            <a href="<%= image_path("rooms/standart4") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart4") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/standart5") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart5") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/standart6") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/standart6") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/luxe1") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe1") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/luxe2") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe2") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/luxe3") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe3") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/luxe4") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe4") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/luxe5") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe5") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item rooms">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/luxe6") %> ">
+              <div class="hovereffect">
+                <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/luxe6") %> ">
+                <div class="overlay">
+                  <div class="icon"><i class="fa fa-search-plus"></i></div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12 item spa">
+          <div class="projects-grid big-img">
+            <a href="<%= image_path("rooms/sea") %> ">
             <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img4.jpg") %> ">
+              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/sea") %> ">
               <div class="overlay">
                 <div class="icon"><i class="fa fa-search-plus"></i></div>
               </div>
@@ -144,58 +220,9 @@
 
         <div class="col-md-4 col-xs-12 item lands">
           <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img5.jpg") %> ">
+            <a href="<%= image_path("rooms/land") %> ">
             <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img5.jpg") %> ">
-              <div class="overlay">
-                <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-xs-12 item spa">
-          <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img6.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img6.jpg") %> ">
-              <div class="overlay">
-                <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-xs-12 item">
-          <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img3.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img3.jpg") %> ">
-              <div class="overlay">
-                <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-xs-12 item">
-          <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img4.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img4.jpg") %> ">
-              <div class="overlay">
-
-                <div class="icon"><i class="fa fa-search-plus"></i></div>
-              </div>
-            </div></a>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-xs-12 item">
-          <div class="projects-grid big-img">
-            <a href="<%= image_path("projects/big/img5.jpg") %> ">
-            <div class="hovereffect">
-              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("projects/img5.jpg") %> ">
+              <img alt="imageportofolio" class="img-responsive" src="<%= image_path("rooms/land") %> ">
               <div class="overlay">
                 <div class="icon"><i class="fa fa-search-plus"></i></div>
               </div>
