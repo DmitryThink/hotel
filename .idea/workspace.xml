@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hotel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hotel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/themify-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/themify-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -64,13 +59,14 @@
           <entry key="Gemfile" value="1" />
           <entry key="css" value="7" />
           <entry key="erb" value="16" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="6" />
           <entry key="jpg" value="3" />
           <entry key="js" value="4" />
           <entry key="rb" value="36" />
           <entry key="ru" value="1" />
           <entry key="scss" value="5" />
-          <entry key="yml" value="1" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -79,10 +75,11 @@
           <entry key="HTML" value="6" />
           <entry key="Image" value="3" />
           <entry key="JavaScript" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="16" />
           <entry key="Ruby" value="38" />
           <entry key="SCSS" value="5" />
-          <entry key="YAML" value="1" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -90,20 +87,22 @@
           <entry key="Gemfile" value="4" />
           <entry key="css" value="43" />
           <entry key="erb" value="806" />
+          <entry key="gitignore" value="2" />
           <entry key="js" value="165" />
           <entry key="rb" value="2472" />
           <entry key="scss" value="129" />
-          <entry key="yml" value="152" />
+          <entry key="yml" value="168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="43" />
           <entry key="JavaScript" value="165" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="806" />
           <entry key="Ruby" value="2476" />
           <entry key="SCSS" value="129" />
-          <entry key="YAML" value="152" />
+          <entry key="YAML" value="168" />
         </counts>
       </usages-collector>
     </session>
@@ -162,20 +161,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2330" />
+            <state relative-caret-position="390">
+              <caret line="89" column="77" lean-forward="true" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/rev-settings.css">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            <state relative-caret-position="315">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="17" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/secrets.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -192,16 +207,6 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/layout.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/messages.rb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -302,7 +307,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/admin/calendar/_calendar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/calendar/_calendar.html.arb" />
         <option value="$PROJECT_DIR$/db/migrate/20180801115747_delete_fields_from_room_date.rb" />
         <option value="$PROJECT_DIR$/app/views/rooms/index.html.erb" />
@@ -343,7 +347,6 @@
         <option value="$PROJECT_DIR$/spec/factories/client_factory.rb" />
         <option value="$PROJECT_DIR$/spec/factories/month_factory.rb" />
         <option value="$PROJECT_DIR$/spec/models/reservation_spec.rb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/lib/scr/generate_month.rb" />
         <option value="$PROJECT_DIR$/app/models/reservation.rb" />
         <option value="$PROJECT_DIR$/app/controllers/book_controller.rb" />
@@ -353,6 +356,8 @@
         <option value="$PROJECT_DIR$/app/views/book/index_new.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -412,15 +417,12 @@
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -632,12 +634,12 @@
       <workItem from="1534520238642" duration="125000" />
       <workItem from="1534759930518" duration="48000" />
       <workItem from="1534761615379" duration="5331000" />
-      <workItem from="1534837074792" duration="1634000" />
+      <workItem from="1534837074792" duration="2381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="444244000" />
+    <option name="totallyTimeSpent" value="444991000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,20 +763,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/contact_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/queries-on3step.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2880">
@@ -912,13 +900,6 @@
     <entry file="file://$PROJECT_DIR$/spec/models/room_spec.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/clients.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="689">
@@ -1044,7 +1025,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2330" />
+        <state relative-caret-position="390">
+          <caret line="89" column="77" lean-forward="true" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/secrets.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+        </state>
       </provider>
     </entry>
   </component>
