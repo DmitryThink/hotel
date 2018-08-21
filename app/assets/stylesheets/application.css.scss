@@ -11,7 +11,6 @@
  * It is generally better to create a new file per style scope.
  *
  *= require jquery.dateselect.css
- *= require themify-icons.css
  *= require fullscreen.css
  *= require settings.css.scss
  *= require rev-settings.css
@@ -27,4 +26,5 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "themify-icons";
 

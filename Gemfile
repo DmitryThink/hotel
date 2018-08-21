@@ -59,6 +59,7 @@ gem 'font-awesome-sass', '~> 4.4.0'
 gem 'activeadmin-index_as_calendar', github: 'bys-control/activeadmin-index_as_calendar'
 
 gem 'liqpay', github: 'liqpay/sdk-ruby'
+gem 'themify-icons-rails' , github: 'scratch-soft/themify-icons-rails'
 
 gem 'factory_bot_rails'
 
