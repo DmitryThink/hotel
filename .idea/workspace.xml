@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rooms/standart.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/standart.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -90,7 +90,7 @@
         <counts>
           <entry key="Gemfile" value="4" />
           <entry key="css" value="43" />
-          <entry key="erb" value="1014" />
+          <entry key="erb" value="1021" />
           <entry key="gitignore" value="2" />
           <entry key="js" value="165" />
           <entry key="rb" value="2472" />
@@ -103,7 +103,7 @@
           <entry key="CSS" value="43" />
           <entry key="JavaScript" value="165" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="1014" />
+          <entry key="RHTML" value="1021" />
           <entry key="Ruby" value="2476" />
           <entry key="SCSS" value="129" />
           <entry key="YAML" value="169" />
@@ -147,7 +147,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="584">
@@ -177,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/rooms/standart.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="79" selection-end-column="16" />
+            <state relative-caret-position="570">
+              <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -186,17 +186,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="404">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/rooms/luxe.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+            <state relative-caret-position="699">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -354,11 +354,11 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/secrets.yml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rooms/standart.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" />
         <option value="$PROJECT_DIR$/app/views/rooms/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/book/index_new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gallery/gallery-grid-3.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rooms/standart.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/rooms/luxe.html.erb" />
       </list>
     </option>
   </component>
@@ -674,12 +674,12 @@
       <workItem from="1534865485212" duration="1114000" />
       <workItem from="1534931441551" duration="279000" />
       <workItem from="1535035162107" duration="995000" />
-      <workItem from="1535049630133" duration="414000" />
+      <workItem from="1535049630133" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451788000" />
+    <option name="totallyTimeSpent" value="452038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,27 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/standart.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="79" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/rooms/luxe.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/secrets.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1087,6 +1066,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
           <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/standart.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/rooms/luxe.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
