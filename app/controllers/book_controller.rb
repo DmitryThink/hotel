@@ -1,5 +1,5 @@
 class BookController < BaseController
-  skip_before_action :verify_authenticity_token, :only => :create
+  skip_before_action :verify_authenticity_token, :only => [:create, :payment]
   before_action :click, only:[:index]
   include Concurrent::Async
 

@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/spec/models/reservation_spec.rb" line="64" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/book_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/book_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/payment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/payment.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -179,8 +175,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -615,12 +611,12 @@
       <workItem from="1536250819043" duration="542000" />
       <workItem from="1536650509475" duration="75000" />
       <workItem from="1536656148698" duration="3409000" />
-      <workItem from="1536669560568" duration="7472000" />
+      <workItem from="1536669560568" duration="8015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469985000" />
+    <option name="totallyTimeSpent" value="470528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1044,8 +1040,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
         </state>
       </provider>
     </entry>
