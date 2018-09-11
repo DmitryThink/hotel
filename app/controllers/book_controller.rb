@@ -59,7 +59,7 @@ class BookController < BaseController
     liqpay = Liqpay.new
     liqpay.api('request', {
         action:      "invoice_send",
-        amount:      @reservation.prepayment,
+        amount:      1,#@reservation.prepayment,
         currency:    "UAH",
         description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
         email:       @reservation.email,
@@ -76,7 +76,7 @@ class BookController < BaseController
     self.async.api_request
     liq = liqpay.cnb_form({
                         action:      "pay",
-                        amount:      @reservation.prepayment,
+                        amount:      1,#@reservation.prepayment,
                         currency:    "UAH",
                         description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
                         email:       @reservation.email,
