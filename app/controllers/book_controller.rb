@@ -45,7 +45,7 @@ class BookController < BaseController
       responce_hash = liqpay.decode_data(data)
       # Check responce_hash['status'] and process due to Liqpay API documentation.
       if responce_hash['status'] == "success"
-        @reservation = Reservation.find(responce_hash['order_id'])
+        @reservation = Reservation.find_by(uuid: responce_hash['order_id'])
         ActiveRecord::Base.transaction do
           ClientMailer.with(reservation: @reservation).welcome_email.deliver_now
           @reservation.update!(prepaid: true)
@@ -64,7 +64,7 @@ class BookController < BaseController
         currency:    "UAH",
         description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
         email:       @reservation.email,
-        order_id:    @reservation.id,
+        order_id:    @reservation.uuid,
         expired_date: (Time.now.utc + 40.minute).strftime('%Y-%m-%d %H:%M:%S'),
         version:     "3"
     })
@@ -81,7 +81,7 @@ class BookController < BaseController
                         currency:    "UAH",
                         description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
                         email:       @reservation.email,
-                        order_id:    @reservation.id,
+                        order_id:    @reservation.uuid,
                         expired_date: (Time.now.utc + 40.minute).strftime('%Y-%m-%d %H:%M:%S'),
                         version:     "3"
                     })

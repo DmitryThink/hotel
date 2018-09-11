@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180911135515) do
+ActiveRecord::Schema.define(version: 20180911151412) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "uuid-ossp"
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -131,6 +132,7 @@ ActiveRecord::Schema.define(version: 20180911135515) do
     t.boolean "paid", default: false
     t.string "message"
     t.boolean "prepaid", default: false
+    t.uuid "uuid", default: -> { "uuid_generate_v4()" }
     t.index ["client_id"], name: "index_reservations_on_client_id"
     t.index ["room_id"], name: "index_reservations_on_room_id"
   end
