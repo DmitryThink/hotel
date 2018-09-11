@@ -53,6 +53,7 @@ class BookController < BaseController
         render :payment
       end
     end
+    render :fail
   end
 
   def api_request
