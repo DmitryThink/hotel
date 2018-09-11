@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/spec/models/reservation_spec.rb" line="64" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="" />
+    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -69,7 +71,7 @@
           <entry key="jpg" value="6" />
           <entry key="js" value="4" />
           <entry key="png" value="3" />
-          <entry key="rb" value="58" />
+          <entry key="rb" value="59" />
           <entry key="ru" value="1" />
           <entry key="scss" value="6" />
           <entry key="yml" value="3" />
@@ -83,7 +85,7 @@
           <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="33" />
-          <entry key="Ruby" value="60" />
+          <entry key="Ruby" value="61" />
           <entry key="SCSS" value="6" />
           <entry key="YAML" value="3" />
         </counts>
@@ -96,7 +98,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="7" />
           <entry key="js" value="165" />
-          <entry key="rb" value="2881" />
+          <entry key="rb" value="2896" />
           <entry key="scss" value="141" />
           <entry key="yml" value="169" />
         </counts>
@@ -108,7 +110,7 @@
           <entry key="JavaScript" value="165" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="1658" />
-          <entry key="Ruby" value="2885" />
+          <entry key="Ruby" value="2900" />
           <entry key="SCSS" value="141" />
           <entry key="YAML" value="169" />
         </counts>
@@ -172,11 +174,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="480">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -286,7 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/room_date.rb" />
         <option value="$PROJECT_DIR$/app/admin/room_dates.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/factory_bot.rb" />
@@ -337,6 +347,7 @@
         <option value="$PROJECT_DIR$/app/controllers/prices_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/book/payment.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/book_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -611,12 +622,12 @@
       <workItem from="1536250819043" duration="542000" />
       <workItem from="1536650509475" duration="75000" />
       <workItem from="1536656148698" duration="3409000" />
-      <workItem from="1536669560568" duration="8015000" />
+      <workItem from="1536669560568" duration="8246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470528000" />
+    <option name="totallyTimeSpent" value="470759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,13 +751,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/admin/reservations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/months.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1040,8 +1044,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        <state relative-caret-position="480">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>

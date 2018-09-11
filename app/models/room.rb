@@ -10,6 +10,7 @@ class Room < ApplicationRecord
   end
 
   def type_of_room_ru
+    return if type_of_room.nil?
     if type_of_room == "standart"
       "Стандарт"
     elsif type_of_room == "luxe"
