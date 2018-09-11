@@ -9,7 +9,7 @@
 
         <li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
           <!--  BACKGROUND IMAGE -->
-          <img src=<%= image_path("img-slide-1.png") %> alt="" />
+          <img src=<%= image_path("img-slide-1.jpg") %> alt="" />
           <div class="tp-caption big-heading sft"
                data-x="50"
                data-y="200"
@@ -46,15 +46,13 @@
                data-speed="400"
                data-start="800"
                data-easing="easeInOutExpo">
-            <div class="btn-slider"><a href="/rooms" style="font-size: 18px;">Посмотреть комнаты</a></div>
-            <div class="btn-slider-book"><a class="popup-form" href="#reservation" style="font-size: 18px;">Забронировать</a></div>
-
+               <div class="btn-slider-book popup-form" href="#reservation" style="font-size: 18px;">Забронировать</div>
           </div>
         </li>
 
         <li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
           <!--  BACKGROUND IMAGE -->
-          <img src=<%= image_path("img-slide-2.png") %> alt="" />
+          <img src=<%= image_path("img-slide-2.jpg") %> alt="" />
           <div class="tp-caption big-heading sft"
                data-x="50"
                data-y="200"
@@ -91,14 +89,13 @@
                data-speed="400"
                data-start="800"
                data-easing="easeInOutExpo">
-            <div class="btn-slider"><a href="/gallery" style="font-size: 18px;">Посмотреть галерею</a></div>
-            <div class="btn-slider-book"><a class="popup-form" href="#reservation" style="font-size: 18px;">Забронировать</a></div>
+            <div class="btn-slider-book popup-form" href="#reservation" style="font-size: 18px;">Забронировать</div>
           </div>
         </li>
 
         <li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
           <!--  BACKGROUND IMAGE -->
-          <img src=<%= image_path("img-slide-3.png") %> alt="" />
+          <img src=<%= image_path("img-slide-3.jpg") %> alt="" />
           <div class="tp-caption big-heading sft"
                data-x="50"
                data-y="200"
@@ -135,8 +132,7 @@
                data-speed="400"
                data-start="800"
                data-easing="easeInOutExpo">
-            <div class="btn-slider"><a href="/prices" style="font-size: 20px;">Посмотреть цены</a></div>
-            <div class="btn-slider-book"><a class="popup-form" href="#reservation" style="font-size: 18px;">Забронировать</a></div>
+            <div class="btn-slider-book popup-form" href="#reservation" style="font-size: 18px;">Забронировать</div>
           </div>
         </li>
 
@@ -278,142 +274,3 @@
   </div>
 </section>
 <!-- stepwork end -->
-
-<!-- section projects -->
-<section class="whitepage no-top" id="projects" aria-label="projects">
-    <div class="container-fluid">
-        <div class="row">
-
-            <!-- filter project -->
-            <div class="onStep" data-animation="fadeInUp" data-time="300">
-                <div class="filter-wraper text-center">
-                    <ul id="filter-porto">
-                        <li class="filt-projects selected" data-project="*">ВСЁ
-                        </li>
-
-                        <li class="filt-projects" data-project=".rooms">КОМНАТЫ
-                        </li>
-
-                        <li class="filt-projects" data-project=".spa">МОРЕ
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- filter project end -->
-
-            <!-- start gallery -->
-            <div class="no-gutter onStep" data-animation="fadeInUp" data-time="600" id="projects-wrap">
-                <div class="col-md-3 col-xs-12 item rooms">
-                    <div class="projects-grid big-img">
-                        <a href=<%= image_path("rooms/standart1.jpg") %>>
-                        <div class="hovereffect">
-                            <%= image_tag("rooms/standart1.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                            <div class="overlay">
-                                <div class="icon"><i class="fa fa-search-plus"></i></div>
-                            </div>
-                        </div></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item rooms">
-                    <div class="projects-grid big-img">
-                        <a href=<%= image_path("rooms/standart1.jpg") %>>
-                            <div class="hovereffect">
-                                <%= image_tag("rooms/standart2.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                                <!--<img alt="imageportofolio" class="img-responsive" scr="img/projects/img2.jpg">-->
-                                <div class="overlay">
-                                    <div class="icon"><i class="fa fa-search-plus"></i></div>
-                                </div>
-                            </div></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item rooms">
-                    <div class="projects-grid big-img">
-                        <a href=<%= image_path("rooms/standart3.jpg") %>>
-                            <div class="hovereffect">
-                                <%= image_tag("rooms/standart3.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                                <!--<img alt="imageportofolio" class="img-responsive" scr="img/projects/img3.jpg">-->
-                                <div class="overlay">
-                                    <div class="icon"><i class="fa fa-search-plus"></i></div>
-                                </div>
-                            </div></a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item rooms">
-                  <div class="projects-grid big-img">
-                    <a href=<%= image_path("rooms/luxe1.jpg") %>>
-                      <div class="hovereffect">
-                        <%= image_tag("rooms/luxe1.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                        <div class="overlay">
-                          <div class="icon"><i class="fa fa-search-plus"></i></div>
-                        </div>
-                      </div></a>
-                  </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item rooms">
-                  <div class="projects-grid big-img">
-                    <a href=<%= image_path("rooms/luxe2.jpg") %>>
-                      <div class="hovereffect">
-                        <%= image_tag("rooms/luxe2.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                        <!--<img alt="imageportofolio" class="img-responsive" scr="img/projects/img2.jpg">-->
-                        <div class="overlay">
-                          <div class="icon"><i class="fa fa-search-plus"></i></div>
-                        </div>
-                      </div></a>
-                  </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item rooms">
-                  <div class="projects-grid big-img">
-                    <a href=<%= image_path("rooms/luxe3.jpg") %>>
-                      <div class="hovereffect">
-                        <%= image_tag("rooms/luxe3.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                        <!--<img alt="imageportofolio" class="img-responsive" scr="img/projects/img3.jpg">-->
-                        <div class="overlay">
-                          <div class="icon"><i class="fa fa-search-plus"></i></div>
-                        </div>
-                      </div></a>
-                  </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item rooms">
-                  <div class="projects-grid big-img">
-                    <a href=<%= image_path("rooms/standart4.jpg") %>>
-                      <div class="hovereffect">
-                        <%= image_tag("rooms/standart4.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                        <!--<img alt="imageportofolio" class="img-responsive" scr="img/projects/img2.jpg">-->
-                        <div class="overlay">
-                          <div class="icon"><i class="fa fa-search-plus"></i></div>
-                        </div>
-                      </div></a>
-                  </div>
-                </div>
-
-                <div class="col-md-3 col-xs-12 item spa">
-                    <div class="projects-grid big-img">
-                        <a href=<%= image_path("rooms/sea.jpg") %>>
-                            <div class="hovereffect">
-                                <%= image_tag("rooms/sea.jpg", :alt => "imageportofolio", :class => "img-responsive", ) %>
-                                <!--<img alt="imageportofolio" class="img-responsive" scr="img/projects/img6.jpg">-->
-                                <div class="overlay">
-                                    <div class="icon"><i class="fa fa-search-plus"></i></div>
-                                </div>
-                            </div></a>
-                    </div>
-                </div>
-
-            </div>
-            <!-- gallery end -->
-        </div>
-    </div>
-</section>
-<!-- section projects end -->
-<!--<div id="map" data-marker-url="<%# asset_url('map-marker.png') %>"></div>-->
-<!-- map -->
-<section aria-label="map" class="no-top">
-  <div class="onStep" data-animation="fadeInUp" data-time="300" id="map"> </div>
-</section>
-<!-- map end -->

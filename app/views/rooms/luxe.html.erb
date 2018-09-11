@@ -68,14 +68,16 @@
         <div class="col-md-8">
 
           <div id="roomsBig" class="owl-carousel">
-            <% (1..6).each do |image| %>
-              <div class="item"><%= image_tag("rooms/luxe#{image}.jpg", :alt => "img" ) %></div>
+            <% images = Dir.glob("app/assets/images/gallery/luxe/*.jpg") %>
+            <% images.each do |image| %>
+              <div class="item"><%= image_tag("gallery/luxe/#{image.split('/').last}", :alt => "img" ) %></div>
             <% end %>
           </div>
 
           <div id="roomsSmall" class="owl-carousel">
-            <% (1..6).each do |image| %>
-              <div class="item"><%= image_tag("rooms/luxe#{image}.jpg", :alt => "img" ) %></div>
+            <% images = Dir.glob("app/assets/images/gallery/luxe/*.jpg") %>
+            <% images.each do |image| %>
+              <div class="item"><%= image_tag("gallery/luxe/#{image.split('/').last}", :alt => "img" ) %></div>
             <% end %>
           </div>
           <a class="btn-book-2 popup-form" href="#reservation">ЗАБРОНИРОВАТЬ</a>
