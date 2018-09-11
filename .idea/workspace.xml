@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/base_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/admin/dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/dashboard.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/about_us_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/about_us_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/book_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/book_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/contact_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contact_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/gallery_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/gallery_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/prices_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/prices_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -107,7 +98,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="7" />
           <entry key="js" value="165" />
-          <entry key="rb" value="2688" />
+          <entry key="rb" value="2813" />
           <entry key="scss" value="141" />
           <entry key="yml" value="169" />
         </counts>
@@ -119,7 +110,7 @@
           <entry key="JavaScript" value="165" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="1597" />
-          <entry key="Ruby" value="2692" />
+          <entry key="Ruby" value="2817" />
           <entry key="SCSS" value="141" />
           <entry key="YAML" value="169" />
         </counts>
@@ -214,8 +205,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="91" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="91" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -668,12 +659,12 @@
       <workItem from="1536250819043" duration="542000" />
       <workItem from="1536650509475" duration="75000" />
       <workItem from="1536656148698" duration="3409000" />
-      <workItem from="1536669560568" duration="4746000" />
+      <workItem from="1536669560568" duration="5274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467259000" />
+    <option name="totallyTimeSpent" value="467787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1089,8 +1080,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="91" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="91" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
