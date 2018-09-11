@@ -1,15 +1,14 @@
-class BookController < ApplicationController
+class BookController < BaseController
   skip_before_action :verify_authenticity_token, :only => :create
+  before_action :click, only:[:index]
   include Concurrent::Async
 
   def index
-    @client = Client.new
-    @reservation = Reservation.new(client: @client)
     render :index_new
   end
 
   def create
-    # begin
+    begin
       ActiveRecord::Base.transaction do
         @client = Client.find_by(client_params) || Client.new(client_params)
         @reservation = Reservation.new(reservation_params)
@@ -30,9 +29,9 @@ class BookController < ApplicationController
           raise ActiveRecord::Rollback, "Rolling back"
         end
       end
-    # rescue => ex
-    #   render :json => { :text => "Что-то пошло не так..." + ex.to_s }, :status => 500
-    # end
+    rescue => ex
+      render :json => { :text => "Что-то пошло не так..." }, :status => 500
+    end
   end
 
   def update

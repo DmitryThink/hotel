@@ -1,4 +1,5 @@
-class PricesController < ApplicationController
+class PricesController < BaseController
+  before_action :click
   def index
 
   end
