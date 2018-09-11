@@ -2,8 +2,7 @@ class ContactController < BaseController
   skip_before_action :verify_authenticity_token, :only => :create
   before_action :click
 
-  def index
-  end
+  def index; end
 
   def create
     @message = Message.new(message_params)

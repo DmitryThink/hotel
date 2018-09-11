@@ -3,9 +3,7 @@ class BookController < BaseController
   before_action :click, only:[:index]
   include Concurrent::Async
 
-  def index
-    render :index_new
-  end
+  def index; end
 
   def create
     begin
