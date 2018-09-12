@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/spec/models/reservation_spec.rb" line="64" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/js/plugin-set.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/plugin-set.js" afterDir="false" />
-    </list>
+    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -602,12 +600,12 @@
       <workItem from="1536650509475" duration="75000" />
       <workItem from="1536656148698" duration="3409000" />
       <workItem from="1536669560568" duration="9873000" />
-      <workItem from="1536742073823" duration="4115000" />
+      <workItem from="1536742073823" duration="4452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="476501000" />
+    <option name="totallyTimeSpent" value="476838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
