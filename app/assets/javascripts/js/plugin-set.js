@@ -235,7 +235,7 @@ jQuery( document ).ready( function() {
                     return false;
                 } );
         }
-        , 1000);
+        , 2500);
 
         // owlCarousel projects
         var owl = jQuery( "#owl-project" );
