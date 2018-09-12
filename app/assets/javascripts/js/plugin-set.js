@@ -210,25 +210,25 @@ jQuery( document ).ready( function() {
                 return false;
             } );
         // projects
-        var jQuerycontainerpro = jQuery('#projects-wrap');
-        jQuery( '.filt-projects' )
-            .on( 'click', function( e ) {
-                e.preventDefault();
-                var jQuerythis = jQuery( this );
-                if ( jQuerythis.hasClass( 'selected' ) ) {
-                    return false;
-                }
-                var jQueryoptionSetpro = jQuerythis.parents();
-                jQueryoptionSetpro.find( '.selected' )
-                    .removeClass( 'selected' );
-                jQuerythis.addClass( 'selected' );
-                var selector = jQuery( this )
-                    .attr( 'data-project' );
-                jQuerycontainerpro.isotope( {
-                    filter: selector,
-                } );
-                return false;
-            } );
+        // var jQuerycontainerpro = jQuery('#projects-wrap');
+        // jQuery( '.filt-projects' )
+        //     .on( 'click', function( e ) {
+        //         e.preventDefault();
+        //         var jQuerythis = jQuery( this );
+        //         if ( jQuerythis.hasClass( 'selected' ) ) {
+        //             return false;
+        //         }
+        //         var jQueryoptionSetpro = jQuerythis.parents();
+        //         jQueryoptionSetpro.find( '.selected' )
+        //             .removeClass( 'selected' );
+        //         jQuerythis.addClass( 'selected' );
+        //         var selector = jQuery( this )
+        //             .attr( 'data-project' );
+        //         jQuerycontainerpro.isotope( {
+        //             filter: selector,
+        //         } );
+        //         return false;
+        //     } );
         // setTimeout(function () {
         //     jQuerycontainerpro.isotope({
         //         itemSelector: '.item',
