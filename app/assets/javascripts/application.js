@@ -16,7 +16,6 @@
 //= require plugin/parallax.min.js
 //= require plugin/sticky.js
 //= require js/jquery.dateselect.js
-//= require js/map.js
 //= require rs-plugin/js/jquery.themepunch.revolution.min.js
 //= require js/on3step.js
 //= require js/plugin-set.js

@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   get 'luxe', to: :standart, controller: 'rooms'
   post 'payment', to: :payment, controller: 'book'
 
-  resources :about_us
   resources :gallery
   resources :prices
   resources :contact
