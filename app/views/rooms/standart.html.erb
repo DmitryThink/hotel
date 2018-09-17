@@ -46,8 +46,6 @@
             <h2>Стандарт</h2>
             <div class="devider-rooms-detail"></div>
             <p>Стандартный трёхместный номер.
-            </p><br>
-            <p>Стандартный трёхместный номер.</p>
 
             <div class="space-single"></div>
 
@@ -59,6 +57,8 @@
             <span><i class="ti-check-box"></i> Бесплатный Wi-Fi</span>
             <span><i class="ti-check-box"></i> Телевизор</span>
             <span><i class="ti-check-box"></i> Кондиционер в номере</span>
+            <span><i class="ti-check-box"></i> Чайник</span>
+            <span><i class="ti-check-box"></i> Полотенца, бельё и т.д.</span>
             <div class="price">₴<%= Month.find_by(room: @room, number: Time.now.month).price.to_i %> <sub>/ ночь</sub></div>
           </div>
         </div>
@@ -85,7 +85,6 @@
         <!-- detail img end -->
 
         <div class="space-single"></div>
-
       </div>
     </div>
   </div>

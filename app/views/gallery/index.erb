@@ -69,7 +69,7 @@
           <% folder = image_path.split('/')[-2] %>
           <% image = image_path.split('/')[-1] %>
           <div class="col-md-3 col-xs-12 item <%= names[folder.to_sym] %>">
-            <div class="projects big-img">
+            <div class="projects-grid big-img">
               <a href="<%= image_path("gallery/#{folder}/#{image}") %> ">
                 <div class="hovereffect">
                   <img alt="imageportofolio" class="img-responsive" src="<%= image_path("gallery/#{folder}/min/#{image}") %> ">
