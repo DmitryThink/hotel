@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
   mount Tolk::Engine => '/y', :as => 'tolk'
   devise_for :admin_users, ActiveAdmin::Devise.config
-  # scope ':locale', defaults: { locale: I18n.locale } do
-  #   ActiveAdmin.routes(self)
-  # end
-  ActiveAdmin.routes(self)
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  #resources :clients
-  root "book#index"
 
+  ActiveAdmin.routes(self)
+
+  root "book#index"
 
   resources :clients, :controller => :book
   resources :reservations, only: [ :index, :create, :update ], :controller => :book

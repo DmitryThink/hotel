@@ -27,7 +27,7 @@ class BookController < BaseController
           raise ActiveRecord::Rollback, "Rolling back"
         end
       end
-    rescue => ex
+    rescue
       render :json => { :text => "Что-то пошло не так..." }, :status => 500
     end
   end

@@ -171,9 +171,9 @@ jQuery( window ).on( "load", function() {
                     url: "/reservations",
                     data: {
                     		reservation: { date_from: b, date_to: h, message: s},
-												client: { name: p, surname: e, phone_number: ph, email: a },
-												type_of_room: sr
-										},
+                                            client: { name: p, surname: e, phone_number: ph, email: a },
+                                            type_of_room: sr
+                                    },
                     success: function( data ) {
                         		successent1.html("Цена за номер: " + data.price + " UAH.<br> У Вас есть 30 минут на предоплату!").fadeIn( 500 ), sentbook.removeAttr( "disabled" ), failedsent1.html(""), payment.html(data.text).fadeIn( 500 ), sentbook.remove()
                     },
