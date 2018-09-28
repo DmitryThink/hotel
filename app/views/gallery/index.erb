@@ -64,7 +64,7 @@
       
       <!-- start gallery -->
       <div class="no-gutter onStep" data-animation="fadeInUp" data-time="600" id="projects-wrap">
-        <% names = { luxe: 'rooms', standart: 'rooms', kitchen: 'resto', land: 'lands', sea: 'spa' } %>
+        <% names = {room: 'rooms', standart: 'rooms', kitchen: 'resto', land: 'lands', sea: 'spa' } %>
         <% Dir.glob("app/assets/images/gallery/*/*.jpg").shuffle.each do |image_path| %>
           <% folder = image_path.split('/')[-2] %>
           <% image = image_path.split('/')[-1] %>

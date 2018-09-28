@@ -1,11 +1,11 @@
 ActiveAdmin.register Room do
   actions :index, :show
-  permit_params :number, :number_of_people, :type_of_room, :status, :price
+  permit_params :number, :number_of_people, :name, :status, :price
   index do
     selectable_column
     column :number
     column :number_of_people
-    column :type_of_room
+    column :name
     actions
   end
 
@@ -13,7 +13,7 @@ ActiveAdmin.register Room do
     attributes_table do
       row :number
       row :number_of_people
-      row :type_of_room
+      row :name
     end
 
     panel :month do

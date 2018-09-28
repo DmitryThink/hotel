@@ -37,9 +37,10 @@
 <section class="whitepage" aria-label="rooms">
   <div class="container">
     <div class="row">
+      <% Room.all.each do |room| %>
       <div class="col-md-6">
         <div class="room">
-          <div class="heading">Стандарт</div>
+          <div class="heading"><%= room.name_ru %></div>
           <table class="table table-bordered">
             <thead>
             <tr>
@@ -48,44 +49,19 @@
             </tr>
             </thead>
             <tbody>
-            <% {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v| %>
+            <% room.months.all.order(:number).each do |m| %>
             <tr>
-              <td><%= k %></td>
-              <% m = Month.find_by(number: v, room_id: 1) %>
+              <td><%= m.name_ru %></td>
               <td><div class="prices"><%= (m.price.to_i if m.present?) || "Нету" %> грн.</div></td>
             </tr>
             <% end %>
             </tbody>
           </table>
           <div class="devider-rooms"></div>
-          <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ КОМНАТУ", standart_path %></div>
+          <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ КОМНАТУ", room.name %></div>
         </div>
       </div>
-
-      <div class="col-md-6">
-        <div class="room">
-          <div class="heading">Люкс</div>
-          <table class="table table-bordered">
-            <thead>
-            <tr>
-              <th><strong>МЕСЯЦ</strong></th>
-              <th><strong>ЦЕНА ЗА НОМЕР</strong></th>
-            </tr>
-            </thead>
-            <tbody>
-            <% {Май: 5, Июнь: 6, Июль: 7, Август: 8, Сентябрь: 9}.each do |k, v| %>
-              <tr>
-                <td><%= k %></td>
-                <% m = Month.find_by(number: v, room_id: 2) %>
-                <td><div class="prices"><%= (m.price.to_i if m.present?) || "Нету" %> грн.</div></td>
-              </tr>
-            <% end %>
-            </tbody>
-          </table>
-          <div class="devider-rooms"></div>
-          <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ КОМНАТУ", luxe_path %></div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </section>

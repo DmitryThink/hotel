@@ -1,0 +1,33 @@
+<% s_date = Time.now.strftime('%d.%m.%Y')%>
+<% e_date = "30.10.#{Time.now.year}" %>
+<% rooms = Room.all %>
+<% rooms.each do |room| %>
+<%= room.name %>datepicker = new HotelDatepicker(document.getElementById("date<%= room.name  %>"), {
+    startOfWeek: "monday",
+    minNights: 3,
+    maxNigths: 60,
+    startDate: '<%= s_date %>',
+    endDate: '<%= e_date %>',
+    disabledDates: <%= Month.disable_dates(room.name) %>
+});
+<% end %>
+
+var previous = document.getElementById('date<%= rooms.first.name %>');
+function RoomSelect() {
+    var x = document.getElementById("selectroom").value;
+    <% rooms.each do |room| %>
+    <%= room.name %> = document.getElementById('date<%= room.name %>');
+    <% end %>
+
+    switch(x.toLowerCase()) {
+        <% rooms.each do |room| %>
+        case '<%= room.name %>':
+            previous.style.display = 'none';
+            previous.value = '';
+            <%= room.name %>datepicker.close();
+            <%= room.name %>.style.display = 'block';
+            previous = <%= room.name %>;
+            break;
+        <% end %>
+    }
+}

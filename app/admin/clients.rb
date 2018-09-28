@@ -52,7 +52,7 @@ ActiveAdmin.register Client do
       f.input :email
       f.input :date_from, :as => :date_picker
       f.input :date_to, as: :date_picker
-      f.input :type_of_room,  :label => 'type_of_room', :as => :select, :collection => Room.all.map{|u| ["#{u.type_of_room}", u.type_of_room]}
+      f.input :room_name, :label => 'Вид комнаты', :as => :select, :collection => Room.all.map{|u| ["#{u.name}", u.name]}
     end
     f.actions
   end
@@ -62,7 +62,7 @@ ActiveAdmin.register Client do
       ActiveRecord::Base.transaction do
         @client = Client.find_by(client_params) || Client.create!(client_params)
         @reservation = Reservation.new(reservation_params)
-        @room = Room.find_by(type_of_room: type_of_room.downcase)
+        @room = Room.find_by(name: room_name.downcase)
         @reservation.client = @client
         @reservation.room = @room
         calculate_total_price
@@ -111,8 +111,8 @@ ActiveAdmin.register Client do
       str[0].mb_chars.upcase.to_s + str[1..-1]
     end
 
-    def type_of_room
-      params[:client][:type_of_room]
+    def room_name
+      params[:client][:room_name]
     end
   end
 end

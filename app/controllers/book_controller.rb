@@ -6,12 +6,12 @@ class BookController < BaseController
   def index; end
 
   def create
-    begin
+    # begin
       ActiveRecord::Base.transaction do
         @client = Client.find_by(client_params) || Client.new(client_params)
         @reservation = Reservation.new(reservation_params)
         @reservation.update_year_of_system
-        @room = Room.find_by(type_of_room: type_of_room.downcase)
+        @room = Room.find_by(name: name.downcase)
         @reservation.client = @client
         @reservation.room = @room
 
@@ -27,9 +27,9 @@ class BookController < BaseController
           raise ActiveRecord::Rollback, "Rolling back"
         end
       end
-    rescue
-      render :json => { :text => "Что-то пошло не так..." }, :status => 500
-    end
+    # rescue
+    #   render :json => { :text => "Что-то пошло не так..." }, :status => 500
+    # end
   end
 
   def update
@@ -62,7 +62,7 @@ class BookController < BaseController
         action:      "invoice_send",
         amount:      1,#@reservation.prepayment,
         currency:    "UAH",
-        description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
+        description: "Предоплата за номер " + @room.name_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
         email:       @reservation.email,
         order_id:    @reservation.uuid,
         expired_date: (Time.now.utc + 40.minute).strftime('%Y-%m-%d %H:%M:%S'),
@@ -79,7 +79,7 @@ class BookController < BaseController
                         action:      "pay",
                         amount:      1,#@reservation.prepayment,
                         currency:    "UAH",
-                        description: "Предоплата за номер " + @room.type_of_room_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
+                        description: "Предоплата за номер " + @room.name_ru + ". Оплатить нужно до: " + (Time.now + 40.minute).strftime('%Y-%m-%d %H:%M:%S') + " по Киеву",
                         email:       @reservation.email,
                         order_id:    @reservation.uuid,
                         expired_date: (Time.now.utc + 40.minute).strftime('%Y-%m-%d %H:%M:%S'),
@@ -102,7 +102,11 @@ class BookController < BaseController
   end
 
   def reservation_params
-    params.require(:reservation).permit(:date_from, :date_to, :message)
+    prms = params.require(:reservation).permit(:date_from, :message)
+    dates = prms[:date_from].split(' > ');
+    prms[:date_from] = dates.first
+    prms[:date_to] = dates.second
+    prms
   end
 
   def client_params
@@ -120,7 +124,7 @@ class BookController < BaseController
     str[0].mb_chars.upcase.to_s + str[1..-1]
   end
 
-  def type_of_room
-    params[:type_of_room]
+  def name
+    params[:name]
   end
 end

@@ -1,20 +1,24 @@
 class Room < ApplicationRecord
-  enum type_of_room: [ :standart, :luxe ]
-
   has_many :reservations
   has_many :room_dates
   has_many :months
+  has_many :items
+
+  validates :name, :name_ru, :number, presence: true
+
+  after_create :setup_room
 
   def to_s
-    type_of_room
+    name
   end
 
-  def type_of_room_ru
-    return if type_of_room.nil?
-    if type_of_room == "standart"
-      "Стандарт"
-    elsif type_of_room == "luxe"
-      "Люкс"
+  def setup_room
+    (Month.start_month..Month.end_month).each do |month_number|
+      Month.create!(number: month_number, price: 1000, room: self)
     end
+  end
+
+  def self.all
+    super.order(:id)
   end
 end

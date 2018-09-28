@@ -1,19 +1,11 @@
 class RoomsController < BaseController
   before_action :click
-  def index
-    @room_standart = Room.find_by(type_of_room: "standart")
-    @room_luxe = Room.find_by(type_of_room: "luxe")
-  end
+  def index; end
 
-  def standart
-    @reservation = Reservation.new
-    @client = Client.new
-    @room = Room.find_by(type_of_room: "standart")
-  end
-
-  def luxe
-    @reservation = Reservation.new
-    @client = Client.new
-    @room = Room.find_by(type_of_room: "luxe")
+  Room.all.each do |room|
+    define_method(room.name) do
+      @room = room
+      render :room
+    end
   end
 end

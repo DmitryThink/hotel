@@ -1,18 +1,18 @@
 jQuery( document ).ready( function() {
 								   			   
         // reservation date
-        jQuery( '.fox2' )
-            .focusin( function() {
-                jQuery.dateSelect.show( {
-                    element: 'input[name="date2"]'
-                } );
-            } );
-        jQuery( '.fox1' )
-            .focusin( function() {
-                jQuery.dateSelect.show( {
-                    element: 'input[name="date1"]'
-                } );
-            } );
+        // jQuery( '.fox2' )
+        //     .focusin( function() {
+        //         jQuery.dateSelect.show( {
+        //             element: 'input[name="date2"]'
+        //         } );
+        //     } );
+        // jQuery( '.fox1' )
+        //     .focusin( function() {
+        //         jQuery.dateSelect.show( {
+        //             element: 'input[name="date1"]'
+        //         } );
+        //     } );
         // slidertext var
         var slidtext = jQuery( '#slidertext' );
         // slideshow text home
@@ -80,12 +80,12 @@ jQuery( document ).ready( function() {
                     beforeClose: function() {
                         jQuery( 'body' )
                             .css( 'overflow', 'auto' );
-                        jQuery.dateSelect.hide( {
-                            element: 'input[name="date2"]'
-                        } );
-                        jQuery.dateSelect.hide( {
-                            element: 'input[name="date1"]'
-                        } );
+                        // jQuery.dateSelect.hide( {
+                        //     element: 'input[name="date2"]'
+                        // } );
+                        // jQuery.dateSelect.hide( {
+                        //     element: 'input[name="date1"]'
+                        // } );
                     }
                 }
             } );
@@ -113,12 +113,12 @@ jQuery( document ).ready( function() {
                         beforeClose: function() {
                             jQuery( 'body' )
                                 .css( 'overflow', 'auto' );
-                            jQuery.dateSelect.hide( {
-                                element: 'input[name="date2"]'
-                            } );
-                            jQuery.dateSelect.hide( {
-                                element: 'input[name="date1"]'
-                            } );
+                            // jQuery.dateSelect.hide( {
+                            //     element: 'input[name="date2"]'
+                            // } );
+                            // jQuery.dateSelect.hide( {
+                            //     element: 'input[name="date1"]'
+                            // } );
                         }
                     }
                 } );

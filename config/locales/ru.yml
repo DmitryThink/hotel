@@ -37,7 +37,7 @@ ru:
       room:
         number: Количество
         number_of_people: Количество человек
-        type_of_room: Тип
+        name: Тип
       room_date:
         date: Дата
         number: Количество номеров

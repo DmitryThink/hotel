@@ -174,7 +174,7 @@
         <div class="row">
 
           <div class="col-sm-12 form-group">
-            <select class="form-control" id="selectroom">
+            <select class="form-control" id="selectroom" onchange="RoomSelect()">
               <optgroup label="Выберите номер">
                 <option value="Standart">Стандарт</option>
                 <option value="Luxe">Люкс</option>
@@ -182,23 +182,19 @@
             </select>
           </div>
 
-          <div class="col-md-12 form-group">
-            <div class="input-group">
-              <input type="text" name="date1" id="date1" class="form-control fox1" placeholder="ДАТА ВЪЕЗДА">
-              <div class="input-group-btn">
-                <span class="icon"><i class="fa fa-calendar"></i></span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-12 form-group">
-            <div class="input-group">
-              <input type="text" name="date2" id="date2" class="form-control fox2" placeholder="ДАТА ВЫЕЗДА">
-              <div class="input-group-btn">
-                <span class="icon"><i class="fa fa-calendar"></i></span>
-              </div>
-            </div>
+          <div class="col-md-12 form-group" >
+<!--            <div class="input-group" id="standart">-->
+              <% Room.all.each_with_index do |room,i| %>
+                <% if i == 0 %>
+                  <input type="text" name="date<%= room.name  %>" id="date<%= room.name  %>" class="form-control fox1" placeholder="ДАТЫ">
+                <% else %>
+                  <input type="text" name="date<%= room.name  %>" id="date<%= room.name  %>" class="form-control fox1" placeholder="ДАТЫ" style="display: none">
+                <% end %>
+              <% end  %>
+<!--              <div class="input-group-btn">-->
+<!--                <span class="icon"><i class="fa fa-calendar"></i></span>-->
+<!--              </div>-->
+<!--            </div>-->
           </div>
 
           <div class="col-sm-12 form-group">

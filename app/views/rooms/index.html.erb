@@ -39,29 +39,21 @@
 <section class="whitepage" aria-label="rooms">
 <div class="container">
  <div class="row">
-
+ <% Room.all.each do |room| %>
  <div class="col-md-6">
   <div class="room">
-   <%= image_tag("gallery/standart/IMG_20180905_134039.jpg", :alt => "room img", :class => "img-responsive", ) %>
-   <div class="heading">Стандарт</div>
+   <% begin %>
+   <%= image_tag("gallery/#{room.name}/1.jpg", :alt => "room img", :class => "img-responsive", ) %>
+   <% rescue %>
+   <% end %>
+   <div class="heading"><%= room.name_ru %></div>
    <div class="devider-rooms"></div>
-   <div class="price">₴<%= Month.find_by(room: @room_standart, number: Time.now.month).price.to_i %><sub>/ ночь</sub></div>
-   <p class="content">Стандартный трёхместный номер.</p>
-   <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", standart_path %></div>
+   <div class="price">₴<%= Month.find_by(room: room, number: Time.now.month).price.to_i || "Нету" %><sub>/ ночь</sub></div>
+   <p class="content"><%= room.description %></p>
+   <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", room.name %></div>
   </div>
  </div>
-
- <div class="col-md-6">
- <div class="room">
-  <%= image_tag("gallery/luxe/IMG_20180905_122309.jpg", :alt => "room img", :class => "img-responsive", ) %>
-  <div class="heading">Люкс</div>
-   <div class="devider-rooms"></div>
-   <div class="price">₴<%= Month.find_by(room: @room_luxe, number: Time.now.month).price.to_i %><sub>/ ночь</sub></div>
-   <p class="content">Четырехместный люкс номер.</p>
-   <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", luxe_path %></div>
- </div>
- </div>
-
+ <% end %>
  </div>
 </div>
 </section>

@@ -17,7 +17,9 @@
 //= require plugin/sticky.js
 //= require js/jquery.dateselect.js
 //= require rs-plugin/js/jquery.themepunch.revolution.min.js
-//= require js/on3step.js
+//= require js/on3step.js.erb
 //= require js/plugin-set.js
 //= require js/nav.js
-
+//= require js/fecha.js
+//= require js/hotel-datepicker.js
+//= require datepicker.js

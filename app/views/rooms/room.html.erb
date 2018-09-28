@@ -1,0 +1,88 @@
+<!-- subheader -->
+<section id="subheader">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          <%= @room.name_ru.upcase %>
+        </h1>
+      </div>
+
+      <!-- devider -->
+      <div class="col-md-12">
+        <div class="devider-page">
+          <div class="devider-img-right">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <ul class="subdetail">
+          <li>
+            <a href="/">ДОМОЙ</a>
+          </li>
+
+          <li class="sep">/
+          </li>
+
+          <li><%= @room.name_ru.upcase %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- subheader end -->
+
+<!-- services -->
+<section class="room-detail whitepage">
+  <div class="onStep" data-animation="fadeInUp" data-time="300">
+    <div class="container">
+      <div class="row">
+
+        <!-- text detail -->
+        <div class="col-md-4">
+          <div class="detaillist">
+            <h2><%= @room.name_ru %></h2>
+            <div class="devider-rooms-detail"></div>
+            <p> <%= @room.description %>
+
+            <div class="space-single"></div>
+
+            <h2>Услуги</h2>
+            <div class="devider-rooms-detail"></div>
+            <% @room.items.each do |item| %>
+            <span><i class="ti-check-box"></i> <%= item.name %> </span>
+            <% end %>
+            <div class="price"> ₴<%= Month.find_by(room: @room, number: Time.now.month).price.to_i %><sub>/ ночь</sub></div>
+          </div>
+        </div>
+        <!-- text detail end -->
+
+        <!-- detail img -->
+        <div class="col-md-8">
+
+          <div id="roomsBig" class="owl-carousel">
+            <% images = Dir.glob("app/assets/images/gallery/#{@room.name}/*.jpg") %>
+            <% images.each do |image| %>
+              <div class="item"><%= image_tag("gallery/#{@room.name}/#{image.split('/').last}", :alt => "img" ) %></div>
+            <% end %>
+          </div>
+
+          <div id="roomsSmall" class="owl-carousel">
+            <% images = Dir.glob("app/assets/images/gallery/#{@room.name}/*.jpg") %>
+            <% images.each do |image| %>
+              <div class="item"><%= image_tag("gallery/#{@room.name}/#{image.split('/').last}", :alt => "img" ) %></div>
+            <% end %>
+          </div>
+          <a class="btn-book-2 popup-form" href="#reservation">ЗАБРОНИРОВАТЬ</a>
+        </div>
+        <!-- detail img end -->
+
+        <div class="space-single"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- services end -->

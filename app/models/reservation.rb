@@ -4,7 +4,7 @@ class Reservation < ApplicationRecord
   validate :prepaid_true, if: :paid
 
   delegate :name, :surname, :phone_number, :email, to: :client, allow_nil: true
-  delegate :type_of_room, :type_of_room_ru, to: :room, allow_nil: true
+  delegate :name, :name_ru, to: :room, allow_nil: true, prefix: true
 
   belongs_to :client
   belongs_to :room

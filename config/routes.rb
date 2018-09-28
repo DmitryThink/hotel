@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   resources :clients, :controller => :book
   resources :reservations, only: [ :index, :create, :update ], :controller => :book
   resources :rooms
-  get 'standart', to: :standart, controller: 'rooms'
-  get 'luxe', to: :standart, controller: 'rooms'
+  Room.all.each do |room|
+    get room.name, to: :"#{room.name}", controller: 'rooms'
+  end
   post 'payment', to: :payment, controller: 'book'
 
   resources :gallery

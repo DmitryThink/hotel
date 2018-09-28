@@ -3,12 +3,12 @@ FactoryBot.define do
     trait :standart do
       number 3
       number_of_people 3
-      type_of_room 'standart'
+      name 'standart'
     end
-    trait :luxe do
+    trait :room do
       number 3
       number_of_people 4
-      type_of_room 'luxe'
+      name 'room'
     end
   end
 end

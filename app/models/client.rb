@@ -4,9 +4,8 @@ class Client < ApplicationRecord
   validates :name, :surname, :email, :phone_number, presence: true
   validate :phone_number_format
 
-  attr_reader :date_from, :date_to, :type_of_room
-
   has_many :reservations
+  attr_reader :date_from, :date_to, :room_name
 
   def destroy
     ActiveRecord::Base.transaction do
