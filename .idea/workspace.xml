@@ -109,7 +109,7 @@
         <counts>
           <entry key="Gemfile" value="4" />
           <entry key="css" value="78" />
-          <entry key="erb" value="3884" />
+          <entry key="erb" value="3886" />
           <entry key="gitignore" value="40" />
           <entry key="html" value="7" />
           <entry key="js" value="1409" />
@@ -124,7 +124,7 @@
           <entry key="HTML" value="7" />
           <entry key="JavaScript" value="1409" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="RHTML" value="3884" />
+          <entry key="RHTML" value="3886" />
           <entry key="Ruby" value="6502" />
           <entry key="SCSS" value="156" />
           <entry key="YAML" value="173" />
@@ -175,7 +175,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="659">
-              <caret line="50" column="142" selection-start-line="50" selection-start-column="142" selection-end-line="50" selection-end-column="142" />
+              <caret line="50" column="140" selection-start-line="50" selection-start-column="140" selection-end-line="50" selection-end-column="140" />
             </state>
           </provider>
         </entry>
@@ -399,7 +399,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AirRefund" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -625,12 +625,12 @@
       <workItem from="1538030926641" duration="5360000" />
       <workItem from="1538122570987" duration="16036000" />
       <workItem from="1538323090263" duration="151000" />
-      <workItem from="1538386809314" duration="4058000" />
+      <workItem from="1538386809314" duration="4243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="544996000" />
+    <option name="totallyTimeSpent" value="545181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1028,7 +1028,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="659">
-          <caret line="50" column="142" selection-start-line="50" selection-start-column="142" selection-end-line="50" selection-end-column="142" />
+          <caret line="50" column="140" selection-start-line="50" selection-start-column="140" selection-end-line="50" selection-end-column="140" />
         </state>
       </provider>
     </entry>
