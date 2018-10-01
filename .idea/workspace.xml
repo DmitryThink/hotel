@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/application.js" line="25" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/index.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -175,7 +173,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="659">
-              <caret line="50" column="140" selection-start-line="50" selection-start-column="140" selection-end-line="50" selection-end-column="140" />
+              <caret line="50" column="150" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="150" />
             </state>
           </provider>
         </entry>
@@ -625,12 +623,12 @@
       <workItem from="1538030926641" duration="5360000" />
       <workItem from="1538122570987" duration="16036000" />
       <workItem from="1538323090263" duration="151000" />
-      <workItem from="1538386809314" duration="4243000" />
+      <workItem from="1538386809314" duration="4499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="545181000" />
+    <option name="totallyTimeSpent" value="545437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1028,7 +1026,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/rooms/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="659">
-          <caret line="50" column="140" selection-start-line="50" selection-start-column="140" selection-end-line="50" selection-end-column="140" />
+          <caret line="50" column="150" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="150" />
         </state>
       </provider>
     </entry>
