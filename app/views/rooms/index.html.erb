@@ -48,7 +48,7 @@
    <% end %>
    <div class="heading"><%= room.name_ru %></div>
    <div class="devider-rooms"></div>
-   <div class="price">₴<%= Month.find_by(room: room, number: Time.now.month).price.to_i || "Нету" %><sub>/ ночь</sub></div>
+   <div class="price">₴<%= room.months.where(number: Time.now.month).first.price.to_i if room.months.where(number: Time.now.month).count != 1 || "Нету" %><sub>/ ночь</sub></div>
    <p class="content"><%= room.description %></p>
    <div class="btn-book"><%= link_to "ПОСМОТРЕТЬ БОЛЬШЕ", room.name %></div>
   </div>
