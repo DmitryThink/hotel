@@ -6,8 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e84f8117-00ca-4b45-9cce-22b6ff495bd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/room.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/room.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/book_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/book_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -83,7 +82,7 @@
           <entry key="jpg" value="9" />
           <entry key="js" value="27" />
           <entry key="png" value="5" />
-          <entry key="rb" value="166" />
+          <entry key="rb" value="168" />
           <entry key="rspec" value="1" />
           <entry key="ru" value="1" />
           <entry key="scss" value="11" />
@@ -101,7 +100,7 @@
           <entry key="JavaScript" value="27" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="RHTML" value="91" />
-          <entry key="Ruby" value="169" />
+          <entry key="Ruby" value="171" />
           <entry key="SCSS" value="11" />
           <entry key="SVG" value="2" />
           <entry key="TypeScript" value="1" />
@@ -184,12 +183,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/rooms/room.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
+            <state relative-caret-position="539">
               <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -197,24 +210,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="659">
               <caret line="50" column="155" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="155" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/reservations_room_date.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="46" selection-start-column="46" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/reservation.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -371,7 +366,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/js/on3step.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js/on3step.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js/hotel-datepicker.js" />
-        <option value="$PROJECT_DIR$/app/controllers/book_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/datepicker.js.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20180928132732_change_name_in_month.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180928135831_wft.rb" />
@@ -386,6 +380,7 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/rooms/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/rooms/room.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/book_controller.rb" />
       </list>
     </option>
   </component>
@@ -712,12 +707,12 @@
       <workItem from="1539791458796" duration="457000" />
       <workItem from="1539804493400" duration="3000" />
       <workItem from="1539806125050" duration="1220000" />
-      <workItem from="1539850653321" duration="1834000" />
+      <workItem from="1539850653321" duration="2109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554462000" />
+    <option name="totallyTimeSpent" value="554737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,9 +832,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/base_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1034,13 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/reservations_room_date.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1105,8 +1090,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rooms/room.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
+        <state relative-caret-position="539">
           <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/book_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>

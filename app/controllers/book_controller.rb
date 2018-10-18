@@ -6,7 +6,7 @@ class BookController < BaseController
   def index; end
 
   def create
-    # begin
+    begin
       ActiveRecord::Base.transaction do
         @client = Client.find_by(client_params) || Client.new(client_params)
         @reservation = Reservation.new(reservation_params)
@@ -27,9 +27,9 @@ class BookController < BaseController
           raise ActiveRecord::Rollback, "Rolling back"
         end
       end
-    # rescue
-    #   render :json => { :text => "Что-то пошло не так..." }, :status => 500
-    # end
+    rescue
+      render :json => { :text => "Что-то пошло не так..." }, :status => 500
+    end
   end
 
   def update
