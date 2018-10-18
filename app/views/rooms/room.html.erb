@@ -54,7 +54,7 @@
             <% @room.items.each do |item| %>
             <span><i class="ti-check-box"></i> <%= item.name %> </span>
             <% end %>
-            <div class="price"> ₴<%= Month.find_by(room: @room, number: Time.now.month).price.to_i %><sub>/ ночь</sub></div>
+            <div class="price"> ₴<%= (@room.months.where(number: Time.now.month).first.price.to_i if @room.months.where(number: Time.now.month).count > 0) || "Нету" %><sub>/ ночь</sub></div>
           </div>
         </div>
         <!-- text detail end -->
